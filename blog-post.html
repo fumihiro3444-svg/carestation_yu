@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ★ タイトルを記事ごとに書き換えてください -->
+  <title>阿蘇に初雪が降りました｜スタッフ日記｜ケアステーションゆう</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-logo"><a href="index.html">ケアステーション ゆう<span>Care Station Yu — 内牧, 阿蘇</span></a></div>
+    <ul class="nav-links">
+      <li><a href="index.html#about">ご挨拶</a></li>
+      <li><a href="index.html#services">サービス</a></li>
+      <li><a href="blog.html" style="color:var(--green);">ブログ</a></li>
+      <li><a href="index.html#contact">お問い合わせ</a></li>
+      <li><a href="index.html#access">アクセス</a></li>
+    </ul>
+    <button class="nav-hamburger" id="hamburger" aria-label="メニュー" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="nav-mobile" id="mobileMenu">
+    <a href="index.html#about"    onclick="closeMenu()">ご挨拶</a>
+    <a href="index.html#services" onclick="closeMenu()">サービス</a>
+    <a href="blog.html"           onclick="closeMenu()">ブログ</a>
+    <a href="index.html#contact"  onclick="closeMenu()">お問い合わせ</a>
+    <a href="index.html#access"   onclick="closeMenu()">アクセス</a>
+  </nav>
+</nav>
+
+<article class="post-section">
+
+  <a href="blog.html" class="post-back">← スタッフ日記一覧へ</a>
+
+  <!-- ★ 日付を書き換えてください -->
+  <div class="post-date">2024年11月28日</div>
+
+  <!-- ★ タイトルを書き換えてください -->
+  <h1 class="post-title">阿蘇に初雪が降りました ❄️</h1>
+
+  <!-- ★ 写真がある場合: 下の post-eyecatch-placeholder を削除して、
+       <div class="post-eyecatch"><img src="images/写真ファイル名.jpg" alt="写真の説明"></div>
+       に差し替えてください。写真はimagesフォルダに入れてください。 -->
+  <div class="post-eyecatch-placeholder">📷 ここに写真が入ります</div>
+
+  <!-- ★ 本文を書き換えてください。<p>タグで段落を区切ります。 -->
+  <div class="post-body">
+    <p>今朝出勤すると、外輪山がうっすら白くなっていました。今年もそんな季節が来たんだなあと、しばらく窓の外を眺めていました。</p>
+
+    <p>スタッフみんなで「今年の冬は早いね」「でも阿蘇の雪景色って綺麗だよね」なんて話しながら、温かいお茶を飲んで一息ついてから仕事を始めました。</p>
+
+    <!-- ★ 途中に写真を入れたい場合: <img src="images/写真名.jpg" alt="説明"> を追加できます -->
+
+    <p>ご利用者さまのお宅を訪問するときは、道路の凍結に十分注意しながら、いつも以上に気をつけて運転しています。寒い季節は体調を崩しやすい時期でもあるので、みなさまの体調管理のお手伝いもしっかり続けていきたいと思います。</p>
+
+    <p>阿蘇の冬は厳しいけれど、その分、春の訪れがひときわ嬉しく感じられます。今年もスタッフ一同、元気に頑張ります！</p>
+  </div>
+
+  <hr class="post-divider">
+
+  <div class="post-nav">
+    <a href="blog.html">← 日記一覧に戻る</a>
+  </div>
+
+</article>
+
+<footer>
+  <ul class="footer-nav">
+    <li><a href="index.html">ホーム</a></li>
+    <li><a href="index.html#about">ご挨拶</a></li>
+    <li><a href="index.html#services">サービス</a></li>
+    <li><a href="blog.html">ブログ</a></li>
+    <li><a href="index.html#contact">お問い合わせ</a></li>
+    <li><a href="index.html#access">アクセス</a></li>
+  </ul>
+  <strong>ケアステーション ゆう</strong><br>
+  〒869-2301 熊本県阿蘇市内牧1214-32　Tel: 0967-32-0307<br>
+  <span class="footer-green">阿蘇の大自然のなかで、あなたの暮らしに寄り添います。</span>
+  <span style="font-size:11px;margin-top:6px;display:block;opacity:0.45;">© 2024 Care Station Yu. All rights reserved.</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

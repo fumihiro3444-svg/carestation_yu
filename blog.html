@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>スタッフ日記｜ケアステーションゆう</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-logo"><a href="index.html">ケアステーション ゆう<span>Care Station Yu — 内牧, 阿蘇</span></a></div>
+    <ul class="nav-links">
+      <li><a href="index.html#about">ご挨拶</a></li>
+      <li><a href="index.html#services">サービス</a></li>
+      <li><a href="blog.html" style="color:var(--green);">ブログ</a></li>
+      <li><a href="index.html#contact">お問い合わせ</a></li>
+      <li><a href="index.html#access">アクセス</a></li>
+    </ul>
+    <button class="nav-hamburger" id="hamburger" aria-label="メニュー" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="nav-mobile" id="mobileMenu">
+    <a href="index.html#about"    onclick="closeMenu()">ご挨拶</a>
+    <a href="index.html#services" onclick="closeMenu()">サービス</a>
+    <a href="blog.html"           onclick="closeMenu()">ブログ</a>
+    <a href="index.html#contact"  onclick="closeMenu()">お問い合わせ</a>
+    <a href="index.html#access"   onclick="closeMenu()">アクセス</a>
+  </nav>
+</nav>
+
+<div class="page-hero">
+  <div class="section-label" style="text-align:center;color:var(--terra);">Blog &amp; Diary</div>
+  <div class="page-hero-title">スタッフ日記</div>
+  <div class="page-hero-sub">阿蘇の四季や日々のできごとをお届けします</div>
+</div>
+
+<section class="blog-list-section">
+  <div class="blog-list">
+
+    <!-- ★ 記事を追加するときは、この <a>〜</a> のブロックを上にコピーして内容を書き換えてください ★ -->
+
+    <a href="blog-post.html" class="blog-list-item">
+      <div class="blog-list-thumb" style="background:linear-gradient(135deg,#c8dff0,#e8f4f0);">
+        <!-- 写真がある場合: <img src="images/記事の写真.jpg" alt=""> -->
+      </div>
+      <div class="blog-list-body">
+        <div class="blog-list-date">2024年11月28日</div>
+        <div class="blog-list-title">阿蘇に初雪が降りました ❄️</div>
+        <div class="blog-list-excerpt">今朝出勤すると、外輪山がうっすら白くなっていました。今年もそんな季節が来たんだなあと、しばらく窓の外を眺めていました。スタッフみんなで「今年の冬は早いね」と話しながら…</div>
+        <div class="blog-list-more">続きを読む →</div>
+      </div>
+    </a>
+
+    <a href="blog-post.html" class="blog-list-item">
+      <div class="blog-list-thumb" style="background:linear-gradient(135deg,#f0ecd0,#e8f2d8);">
+        <!-- 写真がある場合: <img src="images/記事の写真.jpg" alt=""> -->
+      </div>
+      <div class="blog-list-body">
+        <div class="blog-list-date">2024年11月15日</div>
+        <div class="blog-list-title">事業所の庭に菊が咲きました 🌼</div>
+        <div class="blog-list-excerpt">スタッフが丹精込めて育てた菊が、今年も綺麗に咲きました。白や黄色、ピンクと色とりどりで、ご利用者さまにも喜んでいただけました。</div>
+        <div class="blog-list-more">続きを読む →</div>
+      </div>
+    </a>
+
+    <a href="blog-post.html" class="blog-list-item">
+      <div class="blog-list-thumb" style="background:linear-gradient(135deg,#f0dcc8,#f0e8c8);">
+        <!-- 写真がある場合: <img src="images/記事の写真.jpg" alt=""> -->
+      </div>
+      <div class="blog-list-body">
+        <div class="blog-list-date">2024年11月2日</div>
+        <div class="blog-list-title">秋の阿蘇、草千里の紅葉 🍂</div>
+        <div class="blog-list-excerpt">休日に草千里を散歩してきました。すすきが一面に広がって、阿蘇らしい秋の景色でした。こんな大自然の近くで働けることが、本当に幸せだなと改めて感じました。</div>
+        <div class="blog-list-more">続きを読む →</div>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<footer>
+  <ul class="footer-nav">
+    <li><a href="index.html">ホーム</a></li>
+    <li><a href="index.html#about">ご挨拶</a></li>
+    <li><a href="index.html#services">サービス</a></li>
+    <li><a href="blog.html">ブログ</a></li>
+    <li><a href="index.html#contact">お問い合わせ</a></li>
+    <li><a href="index.html#access">アクセス</a></li>
+  </ul>
+  <strong>ケアステーション ゆう</strong><br>
+  〒869-2301 熊本県阿蘇市内牧1214-32　Tel: 0967-32-0307<br>
+  <span class="footer-green">阿蘇の大自然のなかで、あなたの暮らしに寄り添います。</span>
+  <span style="font-size:11px;margin-top:6px;display:block;opacity:0.45;">© 2024 Care Station Yu. All rights reserved.</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

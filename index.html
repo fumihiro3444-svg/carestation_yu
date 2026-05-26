@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ケアステーションゆう｜熊本県阿蘇市内牧の居宅介護支援事業所</title>
+  <meta name="description" content="阿蘇の大自然に寄り添い、皆さまの暮らしを支えます。熊本県阿蘇市内牧の居宅介護支援事業所「ケアステーションゆう」。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-logo">ケアステーション ゆう<span>Care Station Yu — 内牧, 阿蘇</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">ご挨拶</a></li>
+      <li><a href="#services">サービス</a></li>
+      <li><a href="blog.html">ブログ</a></li>
+      <li><a href="#contact">お問い合わせ</a></li>
+      <li><a href="#access">アクセス</a></li>
+    </ul>
+    <button class="nav-hamburger" id="hamburger" aria-label="メニュー" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="nav-mobile" id="mobileMenu">
+    <a href="#about"    onclick="closeMenu()">ご挨拶</a>
+    <a href="#services" onclick="closeMenu()">サービス</a>
+    <a href="blog.html" onclick="closeMenu()">ブログ</a>
+    <a href="#contact"  onclick="closeMenu()">お問い合わせ</a>
+    <a href="#access"   onclick="closeMenu()">アクセス</a>
+  </nav>
+</nav>
+
+<div class="hero">
+  <svg class="hero-bg" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+    <defs>
+      <linearGradient id="skyG" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#c0d8ee"/><stop offset="55%" stop-color="#cce4c4"/><stop offset="100%" stop-color="#a0c090"/></linearGradient>
+      <linearGradient id="m1G" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#829a72"/><stop offset="100%" stop-color="#607852"/></linearGradient>
+      <linearGradient id="m2G" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#90b07a"/><stop offset="100%" stop-color="#708860"/></linearGradient>
+      <linearGradient id="m3G" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#a0c086"/><stop offset="100%" stop-color="#80a068"/></linearGradient>
+      <linearGradient id="fG"  x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#a0ce8a"/><stop offset="100%" stop-color="#80ae6a"/></linearGradient>
+      <linearGradient id="ovG" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="rgba(20,48,24,0.28)"/><stop offset="100%" stop-color="rgba(10,30,10,0.60)"/></linearGradient>
+    </defs>
+    <rect width="800" height="500" fill="url(#skyG)"/>
+    <ellipse cx="620" cy="100" rx="70" ry="50" fill="rgba(255,240,180,0.25)"/>
+    <ellipse cx="620" cy="100" rx="40" ry="28" fill="rgba(255,250,200,0.35)"/>
+    <ellipse cx="100" cy="90" rx="65" ry="24" fill="rgba(255,255,255,0.52)"/>
+    <ellipse cx="150" cy="80" rx="48" ry="19" fill="rgba(255,255,255,0.58)"/>
+    <ellipse cx="480" cy="70" rx="72" ry="26" fill="rgba(255,255,255,0.48)"/>
+    <ellipse cx="530" cy="60" rx="50" ry="20" fill="rgba(255,255,255,0.52)"/>
+    <polygon points="0,310 100,200 200,240 280,170 370,220 450,165 540,215 630,180 720,220 800,195 800,500 0,500" fill="url(#m1G)" opacity="0.7"/>
+    <polygon points="0,340 70,268 150,296 220,248 300,278 370,238 430,268 500,248 580,288 660,258 740,295 800,268 800,500 0,500" fill="url(#m2G)"/>
+    <polygon points="0,370 80,320 160,345 250,310 340,340 430,308 520,336 610,315 700,342 800,320 800,500 0,500" fill="url(#m3G)"/>
+    <rect x="0" y="390" width="800" height="110" fill="url(#fG)"/>
+    <circle cx="90"  cy="408" r="3.5" fill="#f8d878" opacity="0.8"/>
+    <circle cx="220" cy="418" r="3"   fill="#f4a878" opacity="0.8"/>
+    <circle cx="400" cy="405" r="3.5" fill="#f8d878" opacity="0.75"/>
+    <circle cx="520" cy="415" r="3"   fill="#f8e8a0" opacity="0.8"/>
+    <circle cx="680" cy="408" r="3.5" fill="#f4a878" opacity="0.75"/>
+    <rect width="800" height="500" fill="url(#ovG)"/>
+  </svg>
+  <div class="hero-content">
+    <div class="hero-badge">熊本県阿蘇市内牧</div>
+    <div class="hero-title">ケアステーション ゆう</div>
+    <div class="hero-sub">阿蘇の大自然に寄り添い、あなたの暮らしを支えます</div>
+  </div>
+</div>
+
+<section class="greeting" id="about">
+  <div class="greeting-inner">
+    <div class="greeting-text">
+      <div class="section-label" style="color:var(--terra);">Greeting</div>
+      <div class="section-title">地域の皆さまの<br>笑顔のために</div>
+      <div class="divider"></div>
+      <div class="greeting-quote">住み慣れた場所で、安心して、<br>その人らしく暮らし続けてほしい。<br>そんな想いを、私たちは大切にしています。</div>
+      <div class="section-body">ケアステーションゆうは、阿蘇の内牧で地域に根ざした居宅介護支援とヘルパーステーションを運営しています。<br><br>スタッフ一人ひとりが地域を知り、顔の見える関係の中で、お一人おひとりに寄り添ったケアを大切にしています。どんな小さなことでも、まずはお気軽にご相談ください。</div>
+    </div>
+    <div class="greeting-visual">
+      <svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="120" cy="120" r="110" fill="#e8f2ea" stroke="#c8e0cc" stroke-width="1.5"/>
+        <clipPath id="circ"><circle cx="120" cy="120" r="109"/></clipPath>
+        <defs><linearGradient id="gskyG" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#c8ddf0"/><stop offset="100%" stop-color="#b8d8b0"/></linearGradient></defs>
+        <rect x="11" y="11" width="218" height="218" fill="url(#gskyG)" clip-path="url(#circ)"/>
+        <polygon points="20,170 80,100 140,140 200,90 240,120 240,220 20,220" fill="#7aaa74" clip-path="url(#circ)"/>
+        <polygon points="20,185 70,140 120,165 170,135 220,158 240,150 240,220 20,220" fill="#5a8a54" clip-path="url(#circ)"/>
+        <rect x="11" y="185" width="218" height="44" fill="#8abf6e" clip-path="url(#circ)"/>
+        <circle cx="60"  cy="196" r="4"   fill="#f8d060"/>
+        <circle cx="100" cy="200" r="3.5" fill="#f09060"/>
+        <circle cx="150" cy="194" r="4"   fill="#f8d060"/>
+        <circle cx="190" cy="198" r="3.5" fill="#fff"/>
+        <ellipse cx="70"  cy="80" rx="28" ry="12" fill="rgba(255,255,255,0.72)"/>
+        <ellipse cx="90"  cy="74" rx="20" ry="10" fill="rgba(255,255,255,0.78)"/>
+        <ellipse cx="160" cy="68" rx="24" ry="10" fill="rgba(255,255,255,0.7)"/>
+        <text x="120" y="235" text-anchor="middle" font-family="'Zen Kaku Gothic New',sans-serif" font-size="9" fill="#7a9a6a" letter-spacing="2">ASO UCHIMAKI</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<div class="floral-sep"></div>
+
+<div class="stripe">
+  <div class="stripe-inner">
+    <div>
+      <div class="section-label">Our Team</div>
+      <div class="section-title">頼れる仲間が<br>あなたをサポート</div>
+      <div class="divider"></div>
+      <div class="section-body" style="font-size:14.5px;">ケアマネジャー・ヘルパー・事務員が一丸となって、きめ細やかなケアプランとサービスを提供します。地域をよく知るスタッフが、笑顔でお迎えします。</div>
+    </div>
+    <div class="stat-grid">
+      <div class="stat"><div class="stat-num">5名</div><div class="stat-label">ケアマネジャー</div></div>
+      <div class="stat"><div class="stat-num">10名</div><div class="stat-label">ヘルパー</div></div>
+      <div class="stat"><div class="stat-num">1名</div><div class="stat-label">事務員</div></div>
+      <div class="stat"><div class="stat-num">2拠点</div><div class="stat-label">ケア＋ヘルパー</div></div>
+    </div>
+  </div>
+</div>
+
+<section class="services-section" id="services">
+  <div class="services-inner">
+    <div style="text-align:center;margin-bottom:2.5rem;">
+      <div class="section-label" style="text-align:center;">Services</div>
+      <div class="section-title" style="text-align:center;margin-bottom:0.5rem;">私たちにできること</div>
+      <div style="display:flex;justify-content:center;"><div class="divider" style="margin:0;"></div></div>
+    </div>
+    <div class="tab-nav" style="justify-content:center;">
+      <button class="tab-btn active" onclick="switchTab(0)">居宅介護支援</button>
+      <button class="tab-btn" onclick="switchTab(1)">訪問介護</button>
+      <button class="tab-btn" onclick="switchTab(2)">ご利用の流れ</button>
+    </div>
+    <div class="tab-panel active" id="tab0">
+      <div class="cards">
+        <div class="card"><div class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4a7c5e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></div><div class="card-title">ケアプラン作成</div><div class="card-text">お一人おひとりの状況に合わせた、オーダーメイドのケアプランを丁寧に作成します。</div></div>
+        <div class="card"><div class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4a7c5e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div><div class="card-title">定期モニタリング</div><div class="card-text">定期的な訪問で状態を確認し、ケアプランを見直し・調整します。</div></div>
+        <div class="card"><div class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4a7c5e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div><div class="card-title">サービス調整</div><div class="card-text">医療・介護・福祉の関係機関と連携し、必要なサービスをコーディネートします。</div></div>
+      </div>
+    </div>
+    <div class="tab-panel" id="tab1">
+      <div class="cards">
+        <div class="card"><div class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4a7c5e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div><div class="card-title">身体介護</div><div class="card-text">入浴・排泄・食事介助など、日常の身体的なケアを丁寧にお手伝いします。</div></div>
+        <div class="card"><div class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4a7c5e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div><div class="card-title">生活援助</div><div class="card-text">掃除・洗濯・調理など、日常生活を支える家事サービスを提供します。</div></div>
+        <div class="card"><div class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4a7c5e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div><div class="card-title">通院等乗降介助</div><div class="card-text">病院への送迎や外出時のサポートも対応しています。</div></div>
+      </div>
+    </div>
+    <div class="tab-panel" id="tab2">
+      <div class="flow">
+        <div class="flow-step"><div class="flow-num">1</div><div><div class="flow-title">ご相談</div><div class="flow-text">お電話・メール・ご来所にて、お気軽にご相談ください。</div></div></div>
+        <div class="flow-step"><div class="flow-num">2</div><div><div class="flow-title">要介護認定の申請</div><div class="flow-text">未申請の方はご一緒に申請手続きをサポートします。</div></div></div>
+        <div class="flow-step"><div class="flow-num">3</div><div><div class="flow-title">ケアプラン作成</div><div class="flow-text">ご本人・ご家族と話し合い、最適なケアプランを作成します。</div></div></div>
+        <div class="flow-step"><div class="flow-num">4</div><div><div class="flow-title">サービス開始</div><div class="flow-text">安心してご利用いただけるよう、継続的にサポートします。</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ブログ最新記事 -->
+<section class="blog-preview">
+  <div class="blog-preview-inner">
+    <div class="blog-preview-head">
+      <div>
+        <div class="section-label" style="color:var(--terra);">Blog &amp; Diary</div>
+        <div class="section-title" style="margin-bottom:0;">スタッフ日記</div>
+      </div>
+      <a href="blog.html" class="blog-more-link">すべての記事を見る →</a>
+    </div>
+    <div class="blog-cards">
+      <a href="blog-post.html" class="blog-card">
+        <div class="blog-card-img blog-card-img--sample1"></div>
+        <div class="blog-card-body">
+          <span class="blog-card-date">2024年11月28日</span>
+          <div class="blog-card-title">阿蘇に初雪が降りました ❄️</div>
+          <div class="blog-card-excerpt">今朝出勤すると、外輪山がうっすら白くなっていました。今年もそんな季節が来たんだなあと…</div>
+        </div>
+      </a>
+      <a href="blog-post.html" class="blog-card">
+        <div class="blog-card-img blog-card-img--sample2"></div>
+        <div class="blog-card-body">
+          <span class="blog-card-date">2024年11月15日</span>
+          <div class="blog-card-title">事業所の庭に菊が咲きました 🌼</div>
+          <div class="blog-card-excerpt">スタッフが丹精込めて育てた菊が、今年も綺麗に咲きました。ご利用者さまにも喜んでいただけて…</div>
+        </div>
+      </a>
+      <a href="blog-post.html" class="blog-card">
+        <div class="blog-card-img blog-card-img--sample3"></div>
+        <div class="blog-card-body">
+          <span class="blog-card-date">2024年11月2日</span>
+          <div class="blog-card-title">秋の阿蘇、草千里の紅葉 🍂</div>
+          <div class="blog-card-excerpt">休日に草千里を散歩してきました。すすきが一面に広がって、阿蘇らしい秋の景色でした。</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="floral-sep2"></div>
+
+<div class="form-section" id="contact">
+  <div style="text-align:center;margin-bottom:2.2rem;">
+    <div class="section-label" style="text-align:center;color:var(--terra);">Contact</div>
+    <div class="section-title" style="text-align:center;margin-bottom:0.6rem;">メールでのお問い合わせ</div>
+    <div style="display:flex;justify-content:center;"><div class="divider" style="margin:0;"></div></div>
+    <p style="margin-top:1rem;font-size:14px;color:var(--text-mute);">どんなことでもお気軽にどうぞ。まずはご相談から。</p>
+  </div>
+  <div class="form-wrap" id="formWrap">
+    <div class="form-row"><label class="form-label">お名前<span class="req">必須</span></label><input class="form-input" type="text" id="f-name" placeholder="例）山田 花子" autocomplete="name"></div>
+    <div class="form-row"><label class="form-label">メールアドレス<span class="req">必須</span></label><input class="form-input" type="email" id="f-email" placeholder="例）example@email.com" autocomplete="email"></div>
+    <div class="form-row"><label class="form-label">お電話番号</label><input class="form-input" type="tel" id="f-tel" placeholder="例）0967-XX-XXXX" autocomplete="tel"></div>
+    <div class="form-row"><label class="form-label">お問い合わせ種別<span class="req">必須</span></label><div class="form-select-wrap"><select class="form-select" id="f-type"><option value="">選択してください</option><option>居宅介護支援について</option><option>訪問介護サービスについて</option><option>介護保険の申請について</option><option>料金・費用について</option><option>採用について</option><option>その他</option></select></div></div>
+    <div class="form-row"><label class="form-label">お問い合わせ内容<span class="req">必須</span></label><textarea class="form-textarea" id="f-body" placeholder="ご質問・ご相談の内容をご記入ください"></textarea></div>
+    <div class="form-error" id="f-error"></div>
+    <button class="submit-btn" onclick="submitForm()">送信する　→</button>
+    <div class="form-note">通常1〜2営業日以内にご返信いたします。<br>お急ぎの場合はお電話にてご連絡ください。<br><strong style="color:var(--text-mid);">Tel: 0967-32-0307</strong>（平日 8:30〜17:30）</div>
+  </div>
+  <div class="form-success" id="formSuccess">
+    <div class="form-success-icon">✉️</div>
+    <div class="form-success-title">送信が完了しました</div>
+    <div class="form-success-text">お問い合わせいただきありがとうございます。<br>担当者より1〜2営業日以内にご返信いたします。</div>
+  </div>
+</div>
+
+<section class="access-section" id="access">
+  <div class="access-inner">
+    <div style="text-align:center;margin-bottom:2.5rem;">
+      <div class="section-label" style="text-align:center;">Access</div>
+      <div class="section-title" style="text-align:center;margin-bottom:0.5rem;">アクセス・お問い合わせ</div>
+      <div style="display:flex;justify-content:center;"><div class="divider" style="margin:0;"></div></div>
+    </div>
+    <div class="contact-box">
+      <div class="contact-row"><div class="contact-icon"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#4a7c5e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div><div><div class="contact-meta">所在地</div>〒869-2301　熊本県阿蘇市内牧1214-32</div></div>
+      <div class="contact-row"><div class="contact-icon"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#4a7c5e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81 19.79 19.79 0 01.06 2.18 2 2 0 012.03 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.93v2z"/></svg></div><div><div class="contact-meta">電話（スマホからタップで発信できます）</div><div class="contact-tel"><a href="tel:0967320307">0967-32-0307</a></div></div></div>
+      <div class="contact-row"><div class="contact-icon"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#4a7c5e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div><div><div class="contact-meta">ファックス</div>0967-32-0308</div></div>
+      <div class="contact-row"><div class="contact-icon"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#4a7c5e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><div><div class="contact-meta">受付時間</div>平日 8:30 〜 17:30</div></div>
+    </div>
+    <div class="map-wrap">
+      <!-- ★ Googleマップ埋め込みURLをここに差し替えてください -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3299.3!2d131.1046!3d32.9488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35449041b2020001%3A0x6b2e0bbce5d78ead!2z54aK5pys55yM6Zi05ONf5YaF54K555S677yR77yS77yR77yU!5e0!3m2!1sja!2sjp!4v1700000000000!5m2!1sja!2sjp" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="ケアステーションゆう 地図"></iframe>
+    </div>
+    <div class="map-link"><a href="https://www.google.com/maps/search/熊本県阿蘇市内牧1214-32" target="_blank" rel="noopener">Googleマップで大きく見る →</a></div>
+  </div>
+</section>
+
+<footer>
+  <strong>ケアステーション ゆう</strong><br>
+  〒869-2301 熊本県阿蘇市内牧1214-32<br>
+  Tel: 0967-32-0307　Fax: 0967-32-0308　受付: 平日 8:30〜17:30<br>
+  <span class="footer-green">阿蘇の大自然のなかで、あなたの暮らしに寄り添います。</span>
+  <span style="font-size:11px;margin-top:6px;display:block;opacity:0.45;">© 2024 Care Station Yu. All rights reserved.</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
