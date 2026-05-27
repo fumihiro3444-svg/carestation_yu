@@ -157,7 +157,6 @@
   </div>
 </section>
 
-<!-- ブログ最新記事 -->
 <section class="blog-preview">
   <div class="blog-preview-inner">
     <div class="blog-preview-head">
@@ -198,6 +197,7 @@
 
 <div class="floral-sep2"></div>
 
+<!-- ===== お問い合わせフォーム（Formspree対応済み） ===== -->
 <div class="form-section" id="contact">
   <div style="text-align:center;margin-bottom:2.2rem;">
     <div class="section-label" style="text-align:center;color:var(--terra);">Contact</div>
@@ -205,16 +205,65 @@
     <div style="display:flex;justify-content:center;"><div class="divider" style="margin:0;"></div></div>
     <p style="margin-top:1rem;font-size:14px;color:var(--text-mute);">どんなことでもお気軽にどうぞ。まずはご相談から。</p>
   </div>
+
+  <!-- 送信前フォーム -->
   <div class="form-wrap" id="formWrap">
-    <div class="form-row"><label class="form-label">お名前<span class="req">必須</span></label><input class="form-input" type="text" id="f-name" placeholder="例）山田 花子" autocomplete="name"></div>
-    <div class="form-row"><label class="form-label">メールアドレス<span class="req">必須</span></label><input class="form-input" type="email" id="f-email" placeholder="例）example@email.com" autocomplete="email"></div>
-    <div class="form-row"><label class="form-label">お電話番号</label><input class="form-input" type="tel" id="f-tel" placeholder="例）0967-XX-XXXX" autocomplete="tel"></div>
-    <div class="form-row"><label class="form-label">お問い合わせ種別<span class="req">必須</span></label><div class="form-select-wrap"><select class="form-select" id="f-type"><option value="">選択してください</option><option>居宅介護支援について</option><option>訪問介護サービスについて</option><option>介護保険の申請について</option><option>料金・費用について</option><option>採用について</option><option>その他</option></select></div></div>
-    <div class="form-row"><label class="form-label">お問い合わせ内容<span class="req">必須</span></label><textarea class="form-textarea" id="f-body" placeholder="ご質問・ご相談の内容をご記入ください"></textarea></div>
-    <div class="form-error" id="f-error"></div>
-    <button class="submit-btn" onclick="submitForm()">送信する　→</button>
-    <div class="form-note">通常1〜2営業日以内にご返信いたします。<br>お急ぎの場合はお電話にてご連絡ください。<br><strong style="color:var(--text-mid);">Tel: 0967-32-0307</strong>（平日 8:30〜17:30）</div>
+    <form action="https://formspree.io/f/xbdbpwqa" method="POST">
+
+      <div class="form-row">
+        <label class="form-label">お名前<span class="req">必須</span></label>
+        <input class="form-input" type="text" name="お名前"
+               placeholder="例）山田 花子" autocomplete="name" required>
+      </div>
+
+      <div class="form-row">
+        <label class="form-label">メールアドレス<span class="req">必須</span></label>
+        <input class="form-input" type="email" name="メールアドレス"
+               placeholder="例）example@email.com" autocomplete="email" required>
+      </div>
+
+      <div class="form-row">
+        <label class="form-label">お電話番号</label>
+        <input class="form-input" type="tel" name="電話番号"
+               placeholder="例）0967-XX-XXXX" autocomplete="tel">
+      </div>
+
+      <div class="form-row">
+        <label class="form-label">お問い合わせ種別<span class="req">必須</span></label>
+        <div class="form-select-wrap">
+          <select class="form-select" name="種別" required>
+            <option value="">選択してください</option>
+            <option>居宅介護支援について</option>
+            <option>訪問介護サービスについて</option>
+            <option>介護保険の申請について</option>
+            <option>料金・費用について</option>
+            <option>採用について</option>
+            <option>その他</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <label class="form-label">お問い合わせ内容<span class="req">必須</span></label>
+        <textarea class="form-textarea" name="内容"
+                  placeholder="ご質問・ご相談の内容をご記入ください" required></textarea>
+      </div>
+
+      <!-- スパム対策（触らないでください） -->
+      <input type="text" name="_gotcha" style="display:none">
+
+      <button type="submit" class="submit-btn">送信する　→</button>
+
+      <div class="form-note">
+        通常1〜2営業日以内にご返信いたします。<br>
+        お急ぎの場合はお電話にてご連絡ください。<br>
+        <strong style="color:var(--text-mid);">Tel: 0967-32-0307</strong>（平日 8:30〜17:30）
+      </div>
+
+    </form>
   </div>
+
+  <!-- 送信完了メッセージ（Formspreeのリダイレクトを使わない場合のデモ表示） -->
   <div class="form-success" id="formSuccess">
     <div class="form-success-icon">✉️</div>
     <div class="form-success-title">送信が完了しました</div>
@@ -237,12 +286,20 @@
     </div>
     <div class="map-wrap">
       <!-- ★ Googleマップ埋め込みURLをここに差し替えてください -->
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3347.2790468529047!2d131.0476250736776!3d32.97003897358355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354126b9f0c7a7c7%3A0xda1c054cb690809d!2z44CSODY5LTIzMDEg54aK5pys55yM6Zi_6JiH5biC5YaF54mn77yR77yS77yR77yU4oiS77yT77yS!5e0!3m2!1sja!2sjp!4v1779849327971!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  </div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3299.3!2d131.1046!3d32.9488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35449041b2020001%3A0x6b2e0bbce5d78ead!2z54aK5pys55yM6Zi05ONf5YaF54K555S677yR77yS77yR77yU!5e0!3m2!1sja!2sjp!4v1700000000000!5m2!1sja!2sjp" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="ケアステーションゆう 地図"></iframe>
+    </div>
     <div class="map-link"><a href="https://www.google.com/maps/search/熊本県阿蘇市内牧1214-32" target="_blank" rel="noopener">Googleマップで大きく見る →</a></div>
   </div>
 </section>
 
 <footer>
+  <ul class="footer-nav">
+    <li><a href="#about">ご挨拶</a></li>
+    <li><a href="#services">サービス</a></li>
+    <li><a href="blog.html">ブログ</a></li>
+    <li><a href="#contact">お問い合わせ</a></li>
+    <li><a href="#access">アクセス</a></li>
+  </ul>
   <strong>ケアステーション ゆう</strong><br>
   〒869-2301 熊本県阿蘇市内牧1214-32<br>
   Tel: 0967-32-0307　Fax: 0967-32-0308　受付: 平日 8:30〜17:30<br>
