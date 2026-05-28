@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ★ タイトルを記事ごとに書き換えてください -->
+  <title>はじめまして！「ケアステーションゆう」です。ブログ始めました！｜スタッフ日記｜ケアステーションゆう</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-logo"><a href="index.html">ケアステーション ゆう<span>Care Station Yu — 内牧, 阿蘇</span></a></div>
+    <ul class="nav-links">
+      <li><a href="index.html#about">ご挨拶</a></li>
+      <li><a href="index.html#services">サービス</a></li>
+      <li><a href="blog.html" style="color:var(--green);">ブログ</a></li>
+      <li><a href="index.html#contact">お問い合わせ</a></li>
+      <li><a href="index.html#access">アクセス</a></li>
+    </ul>
+    <button class="nav-hamburger" id="hamburger" aria-label="メニュー" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="nav-mobile" id="mobileMenu">
+    <a href="index.html#about"    onclick="closeMenu()">ご挨拶</a>
+    <a href="index.html#services" onclick="closeMenu()">サービス</a>
+    <a href="blog.html"           onclick="closeMenu()">ブログ</a>
+    <a href="index.html#contact"  onclick="closeMenu()">お問い合わせ</a>
+    <a href="index.html#access"   onclick="closeMenu()">アクセス</a>
+  </nav>
+</nav>
+
+<article class="post-section">
+
+  <a href="blog.html" class="post-back">← スタッフ日記一覧へ</a>
+
+  <!-- ★ 日付 -->
+  <div class="post-date">令和８年５月２８日（2025年5月28日）</div>
+
+  <!-- ★ タイトル -->
+  <h1 class="post-title">はじめまして！「ケアステーションゆう」です。ブログ始めました！</h1>
+
+  <!-- ★ アイキャッチ画像
+       【写真なしの場合】 → 下の post-eyecatch-placeholder をそのまま残す
+       【写真ありの場合】 → post-eyecatch-placeholder の行を削除し、
+                            その下の post-eyecatch のコメントアウトを外して
+                            src="images/ファイル名.jpg" を書き換える -->
+  <div class="post-eyecatch-placeholder">📷 ここに写真が入ります</div>
+  <!-- <div class="post-eyecatch"><img src="images/写真ファイル名.jpg" alt="写真の説明"></div> -->
+
+  <!-- ★ 本文 -->
+  <div class="post-body">
+    <p>皆さま、こんにちは！内牧にある「ケアステーションゆう」です。私たちの事務所は２０１０年５月に開設しましたが、このたびホームページが完成しました！あわせて、スタッフの日常や事業所の雰囲気をお伝えする「スタッフ日記（ブログ）」もスタートします。</p>
+
+    <p>ケアステーションゆうには、地域をよく知る5名のケアマネジャーと約10名のヘルパーが在籍しています。毎日、阿蘇の豊かな自然にパワーをもらいながら、ご利用者さまの笑顔のために元気に活動しています。</p>
+
+    <!-- ★ 途中に写真を入れたい場合は下の行のコメントアウトを外して使ってください -->
+    <!-- <img src="images/写真ファイル名.jpg" alt="写真の説明"> -->
+
+    <p>介護の仕事は、人と人とのつながりが一番大切だと私たちは考えています。だからこそ、このブログを通じて、私たちの「普段の顔」や、事業所のあたたかい雰囲気を感じていただけたら嬉しいです。</p>
+
+    <p>これから、阿蘇の季節の便り（外輪山の景色や、庭に咲く花のことなど）と一緒に、日々の出来事を綴っていきます。</p>
+
+    <p>地域の皆さまにとって、いつでも気軽に立ち寄れる、頼れる存在であれるよう努めてまいります。ホームページともども、どうぞよろしくお願いいたします！</p>
+  </div>
+
+  <hr class="post-divider">
+
+  <div class="post-nav">
+    <a href="blog.html">← 日記一覧に戻る</a>
+  </div>
+
+</article>
+
+<footer>
+  <ul class="footer-nav">
+    <li><a href="index.html">ホーム</a></li>
+    <li><a href="index.html#about">ご挨拶</a></li>
+    <li><a href="index.html#services">サービス</a></li>
+    <li><a href="blog.html">ブログ</a></li>
+    <li><a href="index.html#contact">お問い合わせ</a></li>
+    <li><a href="index.html#access">アクセス</a></li>
+  </ul>
+  <strong>ケアステーション ゆう</strong><br>
+  〒869-2301 熊本県阿蘇市内牧1214-32　Tel: 0967-32-0307<br>
+  <span class="footer-green">阿蘇の大自然のなかで、あなたの暮らしに寄り添います。</span>
+  <span style="font-size:11px;margin-top:6px;display:block;opacity:0.45;">© 2024 Care Station Yu. All rights reserved.</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
