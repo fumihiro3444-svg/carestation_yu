@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- =========================================================
+  ★★★ STEP 1：タイトルを書き換えてください ★★★
+  「記事タイトル」の部分を実際のタイトルに変えます
+  ========================================================= -->
+  <title>地域の「お医者様」と「介護」の架け橋として！｜スタッフ日記｜ケアステーションゆう</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-logo"><a href="index.html">ケアステーション ゆう<span>Care Station Yu — 内牧, 阿蘇</span></a></div>
+    <ul class="nav-links">
+      <li><a href="index.html#about">ご挨拶</a></li>
+      <li><a href="index.html#services">サービス</a></li>
+      <li><a href="blog.html" style="color:var(--green);">ブログ</a></li>
+      <li><a href="index.html#contact">お問い合わせ</a></li>
+      <li><a href="index.html#access">アクセス</a></li>
+    </ul>
+    <button class="nav-hamburger" id="hamburger" aria-label="メニュー" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="nav-mobile" id="mobileMenu">
+    <a href="index.html#about"    onclick="closeMenu()">ご挨拶</a>
+    <a href="index.html#services" onclick="closeMenu()">サービス</a>
+    <a href="blog.html"           onclick="closeMenu()">ブログ</a>
+    <a href="index.html#contact"  onclick="closeMenu()">お問い合わせ</a>
+    <a href="index.html#access"   onclick="closeMenu()">アクセス</a>
+  </nav>
+</nav>
+
+<article class="post-section">
+
+  <a href="blog.html" class="post-back">← スタッフ日記一覧へ</a>
+
+  <!-- =========================================================
+  ★★★ STEP 2：日付を書き換えてください ★★★
+  ========================================================= -->
+  <div class="post-date">令和８年５月３１日</div>
+
+  <!-- =========================================================
+  ★★★ STEP 3：見出しタイトルを書き換えてください ★★★
+  ========================================================= -->
+  <h1 class="post-title">地域の「お医者様」と「介護」の架け橋として！</h1>
+
+  <!-- =========================================================
+  ★★★ STEP 4：アイキャッチ画像（記事の冒頭写真）★★★
+
+  【写真なし】の場合
+    → 何もしなくてOKです。このまま残してください。
+
+  【写真あり】の場合
+    → (A) 下の「post-eyecatch-placeholder」の行を削除する
+       (B) その下のコメントアウト（<!-- と --> の行）を外す
+       (C) src="images/ここにファイル名.jpg" を実際のファイル名に変える
+       (D) alt="ここに写真の説明" を書く（例：alt="事業所の庭の菊の花"）
+       (E) 写真ファイルを「images」フォルダに入れてサーバーにアップロードする
+  ========================================================= -->
+  
+  <!-- 写真ありの場合は↑を削除して↓のコメントアウトを外す -->
+  <div class="post-eyecatch"><img src="images/yu2.jpg" alt="医療連携"></div> 
+
+  <!-- =========================================================
+  ★★★ STEP 5：本文を書いてください ★★★
+
+  <p>〜</p> が1段落です。段落を増やしたい場合は <p>〜</p> を追加します。
+  途中に写真を入れたい場合は本文の好きな場所に
+  <img src="images/ファイル名.jpg" alt="写真の説明">
+  を追加してください。
+  ========================================================= -->
+  <div class="post-body">
+
+    <p>私たちケアマネジャーの大切な仕事のひとつに、ご利用者さまの「主治医の先生との連携」があります。</p>
+
+    <p>介護サービスを新しく利用するときや、要介護認定を更新するときには、お医者様が書く「主治医意見書」という書類がとても重要になります。また、日々の生活の中で「最近、お薬の飲み忘れが増えた」「足のむくみが強くなってきた」といった変化に気づいたとき、私たちから病院の先生へ情報をお伝えすることもあります。</p>
+
+    <!-- 本文途中に写真を入れたい場合 ↓ コメントアウトを外して使ってください -->
+    <!-- <img src="images/ここにファイル名.jpg" alt="ここに写真の説明"> -->
+
+    <p>ケアステーションゆうでは、内牧をはじめ阿蘇地域の医療機関の先生方や看護師の皆さまと、日頃から密に連絡を取り合える体制を大切にしています。 </p>
+
+<p>「病気のリハビリをしながら、家で暮らすにはどうしたらいい？」 「退院してすぐの介護はどう準備すればいい？」 そんな医療と介護が重なるお悩みも、私たちが窓口となって先生方としっかり連携しますので、どうぞ安心してご相談ください。 </p>
+
+  </div>
+
+  <hr class="post-divider">
+
+  <div class="post-nav">
+    <a href="blog.html">← 日記一覧に戻る</a>
+  </div>
+
+</article>
+
+<footer>
+  <ul class="footer-nav">
+    <li><a href="index.html">ホーム</a></li>
+    <li><a href="index.html#about">ご挨拶</a></li>
+    <li><a href="index.html#services">サービス</a></li>
+    <li><a href="blog.html">ブログ</a></li>
+    <li><a href="index.html#contact">お問い合わせ</a></li>
+    <li><a href="index.html#access">アクセス</a></li>
+  </ul>
+  <strong>ケアステーション ゆう</strong><br>
+  〒869-2301 熊本県阿蘇市内牧1214-32　Tel: 0967-32-0307<br>
+  <span class="footer-green">阿蘇の大自然のなかで、あなたの暮らしに寄り添います。</span>
+  <span style="font-size:11px;margin-top:6px;display:block;opacity:0.45;">© 2024 Care Station Yu. All rights reserved.</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
