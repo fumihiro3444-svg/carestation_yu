@@ -35,40 +35,31 @@
   </nav>
 </nav>
 
-<div class="hero">
-  <svg class="hero-bg" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
-    <defs>
-      <linearGradient id="skyG" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#c0d8ee"/><stop offset="55%" stop-color="#cce4c4"/><stop offset="100%" stop-color="#a0c090"/></linearGradient>
-      <linearGradient id="m1G" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#829a72"/><stop offset="100%" stop-color="#607852"/></linearGradient>
-      <linearGradient id="m2G" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#90b07a"/><stop offset="100%" stop-color="#708860"/></linearGradient>
-      <linearGradient id="m3G" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#a0c086"/><stop offset="100%" stop-color="#80a068"/></linearGradient>
-      <linearGradient id="fG"  x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#a0ce8a"/><stop offset="100%" stop-color="#80ae6a"/></linearGradient>
-      <linearGradient id="ovG" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="rgba(20,48,24,0.28)"/><stop offset="100%" stop-color="rgba(10,30,10,0.60)"/></linearGradient>
-    </defs>
-    <rect width="800" height="500" fill="url(#skyG)"/>
-    <ellipse cx="620" cy="100" rx="70" ry="50" fill="rgba(255,240,180,0.25)"/>
-    <ellipse cx="620" cy="100" rx="40" ry="28" fill="rgba(255,250,200,0.35)"/>
-    <ellipse cx="100" cy="90" rx="65" ry="24" fill="rgba(255,255,255,0.52)"/>
-    <ellipse cx="150" cy="80" rx="48" ry="19" fill="rgba(255,255,255,0.58)"/>
-    <ellipse cx="480" cy="70" rx="72" ry="26" fill="rgba(255,255,255,0.48)"/>
-    <ellipse cx="530" cy="60" rx="50" ry="20" fill="rgba(255,255,255,0.52)"/>
-    <polygon points="0,310 100,200 200,240 280,170 370,220 450,165 540,215 630,180 720,220 800,195 800,500 0,500" fill="url(#m1G)" opacity="0.7"/>
-    <polygon points="0,340 70,268 150,296 220,248 300,278 370,238 430,268 500,248 580,288 660,258 740,295 800,268 800,500 0,500" fill="url(#m2G)"/>
-    <polygon points="0,370 80,320 160,345 250,310 340,340 430,308 520,336 610,315 700,342 800,320 800,500 0,500" fill="url(#m3G)"/>
-    <rect x="0" y="390" width="800" height="110" fill="url(#fG)"/>
-    <circle cx="90"  cy="408" r="3.5" fill="#f8d878" opacity="0.8"/>
-    <circle cx="220" cy="418" r="3"   fill="#f4a878" opacity="0.8"/>
-    <circle cx="400" cy="405" r="3.5" fill="#f8d878" opacity="0.75"/>
-    <circle cx="520" cy="415" r="3"   fill="#f8e8a0" opacity="0.8"/>
-    <circle cx="680" cy="408" r="3.5" fill="#f4a878" opacity="0.75"/>
-    <rect width="800" height="500" fill="url(#ovG)"/>
-  </svg>
-  <div class="hero-content">
-    <div class="hero-badge">熊本県阿蘇市内牧</div>
-    <div class="hero-title">ケアステーション ゆう</div>
-    <div class="hero-sub">阿蘇の大自然に寄り添い、あなたの暮らしを支えます</div>
+<div class="slideshow" id="slideshow">
+  <div class="ss-slides" id="ssSlides">
+    <div class="ss-slide active"><img src="images/slide1.jpg" alt="杉木立に守られた阿蘇の石畳の小径"></div>
+    <div class="ss-slide"><img src="images/slide2.jpg" alt="阿蘇カルデラの雄大な全景"></div>
+    <div class="ss-slide"><img src="images/slide3.jpg" alt="山々を映す阿蘇の水田"></div>
+    <div class="ss-slide"><img src="images/slide4.jpg" alt="夕暮れに輝くすすき野原"></div>
+    <div class="ss-slide"><img src="images/slide5.jpg" alt="阿蘇の緑豊かな森の小径"></div>
   </div>
+  <div class="ss-overlay"></div>
+  <div class="ss-content" id="ssContent">
+    <div class="ss-tag" id="ssTag"></div>
+    <div class="ss-card">
+      <div class="ss-quote" id="ssQuote"></div>
+      <div class="ss-body" id="ssBody"></div>
+    </div>
+  </div>
+  <div class="ss-controls">
+    <button class="ss-btn" id="ssPrev" aria-label="前へ">&#8592;</button>
+    <button class="ss-btn" id="ssPause" aria-label="一時停止">⏸</button>
+    <button class="ss-btn" id="ssNext" aria-label="次へ">&#8594;</button>
+  </div>
+  <div class="ss-dots" id="ssDots"></div>
+  <div class="ss-progress" id="ssProgress"></div>
 </div>
+
 
 <section class="greeting" id="about">
   <div class="greeting-inner">
