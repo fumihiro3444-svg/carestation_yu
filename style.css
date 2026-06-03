@@ -236,6 +236,7 @@ footer strong { color: rgba(255,255,255,0.88); font-weight: 500; font-size: 15px
   footer { padding: 2.5rem 1.2rem; }
 }
 
+
 /* ── 全体ラッパー ── */
 .slideshow {
   position: relative;
@@ -263,10 +264,19 @@ footer strong { color: rgba(255,255,255,0.88); font-weight: 500; font-size: 15px
 .ss-overlay {
   position: absolute; inset: 0;
   background:
-    linear-gradient(to right, rgba(0,0,0,0.42) 0%, rgba(0,0,0,0.0) 58%),
+    linear-gradient(to right, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.0) 62%),
     linear-gradient(to top,   rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.0) 40%);
   pointer-events: none;
 }
+
+/* ── スライドインアニメーション ── */
+@keyframes ss-slidein {
+  from { opacity: 0; transform: translateX(-28px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+.ss-animate        { animation: ss-slidein 0.65s 0.00s ease both; }
+.ss-animate-delay  { animation: ss-slidein 0.65s 0.18s ease both; }
+.ss-animate-delay2 { animation: ss-slidein 0.65s 0.34s ease both; }
 
 /* ── テキストブロック ── */
 .ss-content {
@@ -274,11 +284,9 @@ footer strong { color: rgba(255,255,255,0.88); font-weight: 500; font-size: 15px
   top: 50%; transform: translateY(-50%);
   left: 0;
   padding: 0 5% 0 6%;
-  max-width: 58%;
+  max-width: 62%;
   z-index: 10;
-  transition: opacity 0.4s ease;
 }
-.ss-content.hidden { opacity: 0; }
 
 .ss-tag {
   font-size: clamp(9px, 1vw, 11px);
@@ -298,18 +306,18 @@ footer strong { color: rgba(255,255,255,0.88); font-weight: 500; font-size: 15px
   color: #fff;
   letter-spacing: 0.07em;
   line-height: 1.65;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   font-family: 'Shippori Mincho', serif;
   text-shadow: 0 1px 12px rgba(0,0,0,0.65), 0 2px 4px rgba(0,0,0,0.4);
 }
 .ss-body {
-  font-size: clamp(10px, 1.1vw, 13px);
-  font-weight: 300;
-  color: rgba(255,255,255,0.88);
-  line-height: 1.95;
-  letter-spacing: 0.05em;
-  font-family: 'Zen Kaku Gothic New', sans-serif;
-  text-shadow: 0 1px 6px rgba(0,0,0,0.7);
+  font-size: clamp(13px, 1.9vw, 20px);
+  font-weight: 400;
+  color: rgba(255,255,255,0.92);
+  line-height: 1.85;
+  letter-spacing: 0.06em;
+  font-family: 'Shippori Mincho', serif;
+  text-shadow: 0 1px 8px rgba(0,0,0,0.65), 0 2px 4px rgba(0,0,0,0.35);
 }
 
 /* ── コントロールボタン ── */
@@ -364,12 +372,12 @@ footer strong { color: rgba(255,255,255,0.88); font-weight: 500; font-size: 15px
 /* ── スマホ対応 ── */
 @media (max-width: 600px) {
   .ss-content {
-    max-width: 80%;
+    max-width: 82%;
     padding: 0 4% 0 5%;
   }
   .ss-card { padding-left: 12px; }
-  .ss-body { display: none; } /* スマホでは本文を非表示にすっきり見せる */
+  .ss-quote { font-size: clamp(14px, 4.5vw, 18px); }
+  .ss-body  { font-size: clamp(11px, 3.2vw, 14px); line-height: 1.7; }
   .ss-controls { top: 10px; right: 10px; }
   .ss-btn { width: 26px; height: 26px; font-size: 11px; }
 }
-

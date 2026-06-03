@@ -31,6 +31,7 @@ function submitForm() {
   document.getElementById('formSuccess').style.display = 'block';
 }
 
+
 (function () {
   const DURATION = 6000;
 
@@ -62,16 +63,15 @@ function submitForm() {
     }
   ];
 
-  const slideEls  = document.querySelectorAll('.ss-slide');
-  const dotsEl    = document.getElementById('ssDots');
-  const contentEl = document.getElementById('ssContent');
-  const tagEl     = document.getElementById('ssTag');
-  const quoteEl   = document.getElementById('ssQuote');
-  const bodyEl    = document.getElementById('ssBody');
-  const progressEl= document.getElementById('ssProgress');
-  const pauseBtn  = document.getElementById('ssPause');
+  const slideEls   = document.querySelectorAll('.ss-slide');
+  const dotsEl     = document.getElementById('ssDots');
+  const tagEl      = document.getElementById('ssTag');
+  const quoteEl    = document.getElementById('ssQuote');
+  const bodyEl     = document.getElementById('ssBody');
+  const progressEl = document.getElementById('ssProgress');
+  const pauseBtn   = document.getElementById('ssPause');
 
-  if (!slideEls.length) return; // スライドショーがないページでは何もしない
+  if (!slideEls.length) return;
 
   let current = 0, paused = false, timer, startTime, elapsed = 0;
 
@@ -83,24 +83,37 @@ function submitForm() {
     dotsEl.appendChild(dot);
   });
 
-  function renderContent(idx, visible) {
+  // アニメーション付きでテキストを表示
+  function renderContent(idx) {
     const s = ssData[idx];
-    contentEl.className = 'ss-content' + (visible ? '' : ' hidden');
     tagEl.textContent   = s.tag;
     quoteEl.textContent = s.quote;
     bodyEl.textContent  = s.body;
+
+    // クラスをいったん除去してアニメーションをリセット
+    [tagEl, quoteEl, bodyEl].forEach(function (el) {
+      el.classList.remove('ss-animate', 'ss-animate-delay', 'ss-animate-delay2');
+    });
+    // 次フレームで付与してアニメーション発火
+    requestAnimationFrame(function () {
+      requestAnimationFrame(function () {
+        tagEl.classList.add('ss-animate');
+        quoteEl.classList.add('ss-animate-delay');
+        bodyEl.classList.add('ss-animate-delay2');
+      });
+    });
   }
-  renderContent(0, true);
+
+  renderContent(0);
 
   function goTo(n) {
     const next = ((n % ssData.length) + ssData.length) % ssData.length;
-    renderContent(next, false);
     slideEls[current].classList.remove('active');
     document.querySelectorAll('.ss-dot')[current].classList.remove('active');
     current = next;
     slideEls[current].classList.add('active');
     document.querySelectorAll('.ss-dot')[current].classList.add('active');
-    setTimeout(function () { renderContent(current, true); }, 400);
+    renderContent(current);
     elapsed = 0;
     progressEl.style.transition = 'none';
     progressEl.style.width = '0%';
