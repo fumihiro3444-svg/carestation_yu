@@ -269,14 +269,14 @@ footer strong { color: rgba(255,255,255,0.88); font-weight: 500; font-size: 15px
   pointer-events: none;
 }
 
-/* ── スライドインアニメーション ── */
+/* ── にじみ出るフェードアニメーション（阿蘇の朝もやイメージ） ── */
 @keyframes ss-slidein {
-  from { opacity: 0; transform: translateX(-28px); }
-  to   { opacity: 1; transform: translateX(0); }
+  from { opacity: 0; filter: blur(5px); }
+  to   { opacity: 1; filter: blur(0);   }
 }
-.ss-animate        { animation: ss-slidein 0.65s 0.00s ease both; }
-.ss-animate-delay  { animation: ss-slidein 0.65s 0.18s ease both; }
-.ss-animate-delay2 { animation: ss-slidein 0.65s 0.34s ease both; }
+.ss-animate        { animation: ss-slidein 2.0s 0.00s ease both; }
+.ss-animate-delay  { animation: ss-slidein 2.0s 0.55s ease both; }
+.ss-animate-delay2 { animation: ss-slidein 2.0s 1.00s ease both; }
 
 /* ── テキストブロック ── */
 .ss-content {
