@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>スタッフ紹介｜ケアステーションゆう</title>
+  <meta name="description" content="熊本県阿蘇市内牧のケアステーションゆうのスタッフ紹介ページです。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .staff-hero-stats{display:flex;justify-content:center;gap:2rem;margin-top:2rem;flex-wrap:wrap}
+    .staff-hero-stat{text-align:center}
+    .staff-hero-stat-num{font-family:'Shippori Mincho',serif;font-size:32px;font-weight:700;color:var(--green);line-height:1}
+    .staff-hero-stat-label{font-size:11px;color:var(--text-mute);letter-spacing:0.1em;margin-top:5px}
+    .staff-hero-stat-sep{width:1px;height:48px;background:var(--border);align-self:center}
+    .staff-section{max-width:860px;margin:0 auto;padding:3.5rem 1.5rem 1rem}
+    .staff-section-head{display:flex;align-items:center;gap:14px;margin-bottom:1rem}
+    .staff-section-badge{display:inline-flex;align-items:center;background:var(--green-pale);color:var(--green-dark);border-radius:20px;padding:5px 14px;font-size:11px;font-weight:500;letter-spacing:0.12em;white-space:nowrap}
+    .staff-section-badge--helper{background:var(--terra-pale);color:#a06040}
+    .staff-section-badge--office{background:var(--cream2);color:#7a6a50}
+    .staff-section-title{font-family:'Shippori Mincho',serif;font-size:22px;font-weight:700;color:var(--text);letter-spacing:0.05em}
+    .staff-section-desc{font-size:13.5px;color:var(--text-mute);line-height:1.9;margin-bottom:2rem;max-width:640px}
+    .staff-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:16px;margin-bottom:3rem}
+    .staff-card{background:var(--warm-white);border:1.5px solid var(--border);border-radius:16px;padding:1.6rem 1.2rem 1.4rem;text-align:center;box-shadow:var(--shadow-sm);transition:box-shadow 0.2s,transform 0.2s;position:relative;overflow:hidden}
+    .staff-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(to right,var(--green),var(--green-light))}
+    .staff-card--helper::before{background:linear-gradient(to right,var(--terra),#e09a6a)}
+    .staff-card--office::before{background:linear-gradient(to right,#a09070,#c0b090)}
+    .staff-card:hover{box-shadow:var(--shadow-md);transform:translateY(-2px)}
+    .staff-avatar{width:72px;height:72px;margin:0 auto 1rem;display:block}
+    .staff-initial{font-size:13px;font-weight:700;color:var(--text-mute);margin-bottom:3px;letter-spacing:0.12em}
+    .staff-role-tag{display:inline-block;font-size:10.5px;font-weight:500;letter-spacing:0.08em;border-radius:10px;padding:3px 11px;margin-bottom:10px}
+    .staff-role-tag--cm{background:var(--green-pale);color:var(--green-dark)}
+    .staff-role-tag--helper{background:var(--terra-pale);color:#a06040}
+    .staff-role-tag--office{background:var(--cream2);color:#7a6a50}
+    .staff-message{font-size:12px;color:var(--text-mute);line-height:1.85;text-align:left;border-top:1px solid var(--border);padding-top:10px;margin-top:6px}
+    .staff-divider{max-width:860px;margin:0 auto;padding:0 1.5rem}
+    .staff-divider hr{border:none;border-top:1px solid var(--border)}
+    .staff-note{font-size:12.5px;color:var(--text-mute);background:var(--cream2);border-radius:10px;padding:0.9rem 1.2rem;margin-bottom:2rem;line-height:1.8}
+    @media(max-width:600px){
+      .staff-grid{grid-template-columns:repeat(2,1fr);gap:12px}
+      .staff-card{padding:1.2rem 0.8rem 1rem}
+      .staff-avatar{width:60px;height:60px}
+      .staff-hero-stats{gap:1.2rem}
+      .staff-hero-stat-num{font-size:26px}
+    }
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-logo"><a href="index.html">ケアステーション ゆう<span>Care Station Yu — 内牧, 阿蘇</span></a></div>
+    <ul class="nav-links">
+      <li><a href="index.html#about">ご挨拶</a></li>
+      <li><a href="index.html#services">サービス</a></li>
+      <li><a href="blog.html">ブログ</a></li>
+      <li><a href="faq.html">よくある質問</a></li>
+      <li><a href="staff.html" style="color:var(--green);">スタッフ紹介</a></li>
+      <li><a href="index.html#contact">お問い合わせ</a></li>
+      <li><a href="index.html#access">アクセス</a></li>
+    </ul>
+    <button class="nav-hamburger" id="hamburger" aria-label="メニュー" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="nav-mobile" id="mobileMenu">
+    <a href="index.html#about" onclick="closeMenu()">ご挨拶</a>
+    <a href="index.html#services" onclick="closeMenu()">サービス</a>
+    <a href="blog.html" onclick="closeMenu()">ブログ</a>
+    <a href="faq.html" onclick="closeMenu()">よくある質問</a>
+    <a href="staff.html" onclick="closeMenu()">スタッフ紹介</a>
+    <a href="index.html#contact" onclick="closeMenu()">お問い合わせ</a>
+    <a href="index.html#access" onclick="closeMenu()">アクセス</a>
+  </nav>
+</nav>
+
+<!-- ページヒーロー -->
+<div class="page-hero">
+  <div class="section-label" style="text-align:center;color:var(--terra);">Our Staff</div>
+  <div class="page-hero-title">スタッフ紹介</div>
+  <div class="page-hero-sub">地域をよく知るスタッフが、笑顔でお迎えします</div>
+  <div class="staff-hero-stats">
+    <div class="staff-hero-stat">
+      <div class="staff-hero-stat-num">5名</div>
+      <div class="staff-hero-stat-label">ケアマネジャー</div>
+    </div>
+    <div class="staff-hero-stat-sep"></div>
+    <div class="staff-hero-stat">
+      <div class="staff-hero-stat-num">3名</div>
+      <div class="staff-hero-stat-label">ヘルパー</div>
+    </div>
+    <div class="staff-hero-stat-sep"></div>
+    <div class="staff-hero-stat">
+      <div class="staff-hero-stat-num">1名</div>
+      <div class="staff-hero-stat-label">事務</div>
+    </div>
+    <div class="staff-hero-stat-sep"></div>
+    <div class="staff-hero-stat">
+      <div class="staff-hero-stat-num">多数</div>
+      <div class="staff-hero-stat-label">登録ヘルパー在籍</div>
+    </div>
+  </div>
+</div>
+
+<!-- SVGアバター定義（個別） -->
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+
+    <!-- ★ Y.S：ケアマネ女性・ショート（黒髪） -->
+    <symbol id="av-ys" viewBox="0 0 80 80">
+      <circle cx="40" cy="40" r="40" fill="#e6f0ea"/>
+      <rect x="34" y="54" width="12" height="8" rx="4" fill="#f2c9a8"/>
+      <ellipse cx="40" cy="73" rx="20" ry="11" fill="#4a7c5e"/>
+      <ellipse cx="40" cy="37" rx="15" ry="17" fill="#f2c9a8"/>
+      <!-- ショートヘア（黒） -->
+      <ellipse cx="40" cy="22" rx="15" ry="9" fill="#1a1008"/>
+      <ellipse cx="25" cy="32" rx="5" ry="10" fill="#1a1008"/>
+      <ellipse cx="55" cy="32" rx="5" ry="10" fill="#1a1008"/>
+      <rect x="25" y="38" width="4" height="8" rx="2" fill="#1a1008"/>
+      <rect x="51" y="38" width="4" height="8" rx="2" fill="#1a1008"/>
+      <ellipse cx="32" cy="37" rx="3" ry="3.2" fill="#fff"/>
+      <ellipse cx="48" cy="37" rx="3" ry="3.2" fill="#fff"/>
+      <circle cx="32" cy="38" r="2" fill="#2a1a0a"/>
+      <circle cx="48" cy="38" r="2" fill="#2a1a0a"/>
+      <circle cx="33" cy="37" r="0.6" fill="#fff"/>
+      <circle cx="49" cy="37" r="0.6" fill="#fff"/>
+      <path d="M29 33 Q32 31.5 35 33" stroke="#1a1008" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+      <path d="M45 33 Q48 31.5 51 33" stroke="#1a1008" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+      <path d="M39 41 Q40 43 41 41" stroke="#c49070" stroke-width="1" fill="none"/>
+      <path d="M34 46 Q40 50 46 46" stroke="#c07858" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+      <ellipse cx="27" cy="44" rx="4" ry="2.5" fill="#f0a090" opacity="0.38"/>
+      <ellipse cx="53" cy="44" rx="4" ry="2.5" fill="#f0a090" opacity="0.38"/>
+    </symbol>
+
+    <!-- ★ S.M：ケアマネ女性・セミロング（黒髪） -->
+    <symbol id="av-sm" viewBox="0 0 80 80">
+      <circle cx="40" cy="40" r="40" fill="#e6f0ea"/>
+      <rect x="34" y="54" width="12" height="8" rx="4" fill="#f2c9a8"/>
+      <ellipse cx="40" cy="73" rx="20" ry="11" fill="#4a7c5e"/>
+      <ellipse cx="40" cy="37" rx="15" ry="17" fill="#f2c9a8"/>
+      <!-- セミロングヘア（黒）：耳下あごラインまで -->
+      <ellipse cx="40" cy="21" rx="15" ry="9" fill="#1a1008"/>
+      <ellipse cx="25" cy="36" rx="5.5" ry="15" fill="#1a1008"/>
+      <ellipse cx="55" cy="36" rx="5.5" ry="15" fill="#1a1008"/>
+      <ellipse cx="25" cy="50" rx="4" ry="7" fill="#1a1008"/>
+      <ellipse cx="55" cy="50" rx="4" ry="7" fill="#1a1008"/>
+      <ellipse cx="32" cy="37" rx="3" ry="3.2" fill="#fff"/>
+      <ellipse cx="48" cy="37" rx="3" ry="3.2" fill="#fff"/>
+      <circle cx="32" cy="38" r="2" fill="#2a1a0a"/>
+      <circle cx="48" cy="38" r="2" fill="#2a1a0a"/>
+      <circle cx="33" cy="37" r="0.6" fill="#fff"/>
+      <circle cx="49" cy="37" r="0.6" fill="#fff"/>
+      <path d="M29 33 Q32 31.5 35 33" stroke="#1a1008" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+      <path d="M45 33 Q48 31.5 51 33" stroke="#1a1008" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+      <path d="M39 41 Q40 43 41 41" stroke="#c49070" stroke-width="1" fill="none"/>
+      <path d="M34 46 Q40 50 46 46" stroke="#c07858" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+      <ellipse cx="27" cy="44" rx="4" ry="2.5" fill="#f0a090" opacity="0.38"/>
+      <ellipse cx="53" cy="44" rx="4" ry="2.5" fill="#f0a090" opacity="0.38"/>
+    </symbol>
+
+    <!-- ★ M.W（ケアマネ）：ケアマネ女性・ショート（黒髪） -->
+    <symbol id="av-mw-cm" viewBox="0 0 80 80">
+      <circle cx="40" cy="40" r="40" fill="#e6f0ea"/>
+      <rect x="34" y="54" width="12" height="8" rx="4" fill="#f2c9a8"/>
+      <ellipse cx="40" cy="73" rx="20" ry="11" fill="#4a7c5e"/>
+      <ellipse cx="40" cy="37" rx="15" ry="17" fill="#f2c9a8"/>
+      <!-- ショートヘア（黒）・前髪あり -->
+      <ellipse cx="40" cy="22" rx="15" ry="9" fill="#1a1008"/>
+      <ellipse cx="25" cy="31" rx="4.5" ry="9" fill="#1a1008"/>
+      <ellipse cx="55" cy="31" rx="4.5" ry="9" fill="#1a1008"/>
+      <rect x="25" y="37" width="4" height="7" rx="2" fill="#1a1008"/>
+      <rect x="51" y="37" width="4" height="7" rx="2" fill="#1a1008"/>
+      <!-- 前髪 -->
+      <path d="M24 26 Q32 20 40 20 Q48 20 56 26" fill="#1a1008"/>
+      <ellipse cx="32" cy="37" rx="3" ry="3.2" fill="#fff"/>
+      <ellipse cx="48" cy="37" rx="3" ry="3.2" fill="#fff"/>
+      <circle cx="32" cy="38" r="2" fill="#2a1a0a"/>
+      <circle cx="48" cy="38" r="2" fill="#2a1a0a"/>
+      <circle cx="33" cy="37" r="0.6" fill="#fff"/>
+      <circle cx="49" cy="37" r="0.6" fill="#fff"/>
+      <path d="M29 33 Q32 31.5 35 33" stroke="#1a1008" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+      <path d="M45 33 Q48 31.5 51 33" stroke="#1a1008" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+      <path d="M39 41 Q40 43 41 41" stroke="#c49070" stroke-width="1" fill="none"/>
+      <path d="M34 46 Q40 50 46 46" stroke="#c07858" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+      <ellipse cx="27" cy="44" rx="4" ry="2.5" fill="#f0a090" opacity="0.38"/>
+      <ellipse cx="53" cy="44" rx="4" ry="2.5" fill="#f0a090" opacity="0.38"/>
+    </symbol>
+
+    <!-- ★ S.T：ケアマネ女性・セミロング（黒髪） -->
+    <symbol id="av-st" viewBox="0 0 80 80">
+      <circle cx="40" cy="40" r="40" fill="#e6f0ea"/>
+      <rect x="34" y="54" width="12" height="8" rx="4" fill="#f2c9a8"/>
+      <ellipse cx="40" cy="73" rx="20" ry="11" fill="#4a7c5e"/>
+      <ellipse cx="40" cy="37" rx="15" ry="17" fill="#f2c9a8"/>
+      <!-- セミロングヘア（黒）・センター分け -->
+      <ellipse cx="40" cy="21" rx="15" ry="9" fill="#1a1008"/>
+      <ellipse cx="25" cy="36" rx="5.5" ry="15" fill="#1a1008"/>
+      <ellipse cx="55" cy="36" rx="5.5" ry="15" fill="#1a1008"/>
+      <ellipse cx="26" cy="51" rx="4.5" ry="6" fill="#1a1008"/>
+      <ellipse cx="54" cy="51" rx="4.5" ry="6" fill="#1a1008"/>
+      <!-- センター分け線 -->
+      <path d="M40 12 Q40 20 40 26" stroke="#2a1808" stroke-width="1" fill="none"/>
+      <ellipse cx="32" cy="37" rx="3" ry="3.2" fill="#fff"/>
+      <ellipse cx="48" cy="37" rx="3" ry="3.2" fill="#fff"/>
+      <circle cx="32" cy="38" r="2" fill="#2a1a0a"/>
+      <circle cx="48" cy="38" r="2" fill="#2a1a0a"/>
+      <circle cx="33" cy="37" r="0.6" fill="#fff"/>
+      <circle cx="49" cy="37" r="0.6" fill="#fff"/>
+      <path d="M29 33 Q32 31.5 35 33" stroke="#1a1008" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+      <path d="M45 33 Q48 31.5 51 33" stroke="#1a1008" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+      <path d="M39 41 Q40 43 41 41" stroke="#c49070" stroke-width="1" fill="none"/>
+      <path d="M34 46 Q40 50 46 46" stroke="#c07858" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+      <ellipse cx="27" cy="44" rx="4" ry="2.5" fill="#f0a090" opacity="0.38"/>
+      <ellipse cx="53" cy="44" rx="4" ry="2.5" fill="#f0a090" opacity="0.38"/>
+    </symbol>
+
+    <!-- ★ F.K：ケアマネ男性・眼鏡・白髪交じり -->
+    <symbol id="av-fk" viewBox="0 0 80 80">
+      <circle cx="40" cy="40" r="40" fill="#e6f0ea"/>
+      <rect x="34" y="54" width="12" height="8" rx="4" fill="#f2c9a8"/>
+      <ellipse cx="40" cy="73" rx="20" ry="11" fill="#3a6a4e"/>
+      <!-- ネクタイ -->
+      <polygon points="40,58 37,66 40,72 43,66" fill="#8b2020"/>
+      <ellipse cx="40" cy="37" rx="15" ry="17" fill="#f2c9a8"/>
+      <!-- 白髪交じりショートヘア（グレー） -->
+      <ellipse cx="40" cy="22" rx="15" ry="8" fill="#6a6a6a"/>
+      <rect x="25" y="21" width="30" height="9" fill="#6a6a6a"/>
+      <rect x="25" y="28" width="4" height="7" rx="1" fill="#6a6a6a"/>
+      <rect x="51" y="28" width="4" height="7" rx="1" fill="#6a6a6a"/>
+      <!-- 白髪ハイライト -->
+      <path d="M28 23 Q33 19 38 21" stroke="#c8c8c8" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+      <path d="M44 20 Q49 19 53 22" stroke="#c8c8c8" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+      <path d="M27 27 Q29 24 31 26" stroke="#c0c0c0" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+      <ellipse cx="32" cy="37" rx="3" ry="3" fill="#fff"/>
+      <ellipse cx="48" cy="37" rx="3" ry="3" fill="#fff"/>
+      <circle cx="32" cy="38" r="2" fill="#2a1a0a"/>
+      <circle cx="48" cy="38" r="2" fill="#2a1a0a"/>
+      <circle cx="33" cy="37" r="0.6" fill="#fff"/>
+      <circle cx="49" cy="37" r="0.6" fill="#fff"/>
+      <!-- 太め眉（男性らしく） -->
+      <path d="M28 32 Q32 30 36 32" stroke="#555" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      <path d="M44 32 Q48 30 52 32" stroke="#555" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      <!-- 眼鏡フレーム -->
+      <rect x="25.5" y="34" width="13" height="8" rx="3.5" fill="none" stroke="#444" stroke-width="1.6"/>
+      <rect x="41.5" y="34" width="13" height="8" rx="3.5" fill="none" stroke="#444" stroke-width="1.6"/>
+      <line x1="38.5" y1="38" x2="41.5" y2="38" stroke="#444" stroke-width="1.4"/>
+      <line x1="25.5" y1="38" x2="22" y2="37" stroke="#444" stroke-width="1.4"/>
+      <line x1="54.5" y1="38" x2="58" y2="37" stroke="#444" stroke-width="1.4"/>
+      <path d="M38 41 Q40 44 42 41" stroke="#c49070" stroke-width="1.2" fill="none"/>
+      <path d="M34 46 Q40 49 46 46" stroke="#b07858" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    </symbol>
+
+    <!-- ★ K.K：ヘルパー女性・ショート（黒髪） -->
+    <symbol id="av-kk" viewBox="0 0 80 80">
+      <circle cx="40" cy="40" r="40" fill="#f5ece4"/>
+      <rect x="34" y="54" width="12" height="8" rx="4" fill="#f2c9a8"/>
+      <ellipse cx="40" cy="73" rx="20" ry="11" fill="#c07a50"/>
+      <ellipse cx="40" cy="37" rx="15" ry="17" fill="#f2c9a8"/>
+      <!-- ショートヘア（黒） -->
+      <ellipse cx="40" cy="22" rx="15" ry="9" fill="#1a1008"/>
+      <ellipse cx="25" cy="31" rx="5" ry="9" fill="#1a1008"/>
+      <ellipse cx="55" cy="31" rx="5" ry="9" fill="#1a1008"/>
+      <rect x="25" y="37" width="4" height="8" rx="2" fill="#1a1008"/>
+      <rect x="51" y="37" width="4" height="8" rx="2" fill="#1a1008"/>
+      <ellipse cx="32" cy="37" rx="3" ry="3.2" fill="#fff"/>
+      <ellipse cx="48" cy="37" rx="3" ry="3.2" fill="#fff"/>
+      <circle cx="32" cy="38" r="2" fill="#2a1a0a"/>
+      <circle cx="48" cy="38" r="2" fill="#2a1a0a"/>
+      <circle cx="33" cy="37" r="0.6" fill="#fff"/>
+      <circle cx="49" cy="37" r="0.6" fill="#fff"/>
+      <path d="M29 33 Q32 31.5 35 33" stroke="#1a1008" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+      <path d="M45 33 Q48 31.5 51 33" stroke="#1a1008" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+      <path d="M39 41 Q40 43 41 41" stroke="#c49070" stroke-width="1" fill="none"/>
+      <path d="M34 46 Q40 50 46 46" stroke="#c07858" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+      <ellipse cx="27" cy="44" rx="4" ry="2.5" fill="#f0a090" opacity="0.38"/>
+      <ellipse cx="53" cy="44" rx="4" ry="2.5" fill="#f0a090" opacity="0.38"/>
+    </symbol>
+
+    <!-- ★ S.S：ヘルパー女性・セミロング（黒髪） -->
+    <symbol id="av-ss" viewBox="0 0 80 80">
+      <circle cx="40" cy="40" r="40" fill="#f5ece4"/>
+      <rect x="34" y="54" width="12" height="8" rx="4" fill="#f2c9a8"/>
+      <ellipse cx="40" cy="73" rx="20" ry="11" fill="#c07a50"/>
+      <ellipse cx="40" cy="37" rx="15" ry="17" fill="#f2c9a8"/>
+      <!-- セミロングヘア（黒） -->
+      <ellipse cx="40" cy="21" rx="15" ry="9" fill="#1a1008"/>
+      <ellipse cx="25" cy="36" rx="5.5" ry="15" fill="#1a1008"/>
+      <ellipse cx="55" cy="36" rx="5.5" ry="15" fill="#1a1008"/>
+      <ellipse cx="25" cy="50" rx="4" ry="7" fill="#1a1008"/>
+      <ellipse cx="55" cy="50" rx="4" ry="7" fill="#1a1008"/>
+      <ellipse cx="32" cy="37" rx="3" ry="3.2" fill="#fff"/>
+      <ellipse cx="48" cy="37" rx="3" ry="3.2" fill="#fff"/>
+      <circle cx="32" cy="38" r="2" fill="#2a1a0a"/>
+      <circle cx="48" cy="38" r="2" fill="#2a1a0a"/>
+      <circle cx="33" cy="37" r="0.6" fill="#fff"/>
+      <circle cx="49" cy="37" r="0.6" fill="#fff"/>
+      <path d="M29 33 Q32 31.5 35 33" stroke="#1a1008" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+      <path d="M45 33 Q48 31.5 51 33" stroke="#1a1008" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+      <path d="M39 41 Q40 43 41 41" stroke="#c49070" stroke-width="1" fill="none"/>
+      <path d="M34 46 Q40 50 46 46" stroke="#c07858" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+      <ellipse cx="27" cy="44" rx="4" ry="2.5" fill="#f0a090" opacity="0.38"/>
+      <ellipse cx="53" cy="44" rx="4" ry="2.5" fill="#f0a090" opacity="0.38"/>
+    </symbol>
+
+    <!-- ★ M.W（ヘルパー）：ヘルパー女性・ロング（黒髪） -->
+    <symbol id="av-mw-h" viewBox="0 0 80 80">
+      <circle cx="40" cy="40" r="40" fill="#f5ece4"/>
+      <rect x="34" y="54" width="12" height="8" rx="4" fill="#f2c9a8"/>
+      <ellipse cx="40" cy="73" rx="20" ry="11" fill="#c07a50"/>
+      <ellipse cx="40" cy="37" rx="15" ry="17" fill="#f2c9a8"/>
+      <!-- ロングヘア（黒）：肩より下まで -->
+      <ellipse cx="40" cy="20" rx="15" ry="9" fill="#1a1008"/>
+      <ellipse cx="24" cy="40" rx="6" ry="22" fill="#1a1008"/>
+      <ellipse cx="56" cy="40" rx="6" ry="22" fill="#1a1008"/>
+      <ellipse cx="25" cy="60" rx="5" ry="10" fill="#1a1008"/>
+      <ellipse cx="55" cy="60" rx="5" ry="10" fill="#1a1008"/>
+      <ellipse cx="32" cy="37" rx="3" ry="3.2" fill="#fff"/>
+      <ellipse cx="48" cy="37" rx="3" ry="3.2" fill="#fff"/>
+      <circle cx="32" cy="38" r="2" fill="#2a1a0a"/>
+      <circle cx="48" cy="38" r="2" fill="#2a1a0a"/>
+      <circle cx="33" cy="37" r="0.6" fill="#fff"/>
+      <circle cx="49" cy="37" r="0.6" fill="#fff"/>
+      <path d="M29 33 Q32 31.5 35 33" stroke="#1a1008" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+      <path d="M45 33 Q48 31.5 51 33" stroke="#1a1008" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+      <path d="M39 41 Q40 43 41 41" stroke="#c49070" stroke-width="1" fill="none"/>
+      <path d="M34 46 Q40 50 46 46" stroke="#c07858" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+      <ellipse cx="27" cy="44" rx="4" ry="2.5" fill="#f0a090" opacity="0.38"/>
+      <ellipse cx="53" cy="44" rx="4" ry="2.5" fill="#f0a090" opacity="0.38"/>
+    </symbol>
+
+    <!-- ★ 事務スタッフ：セミロング（黒髪） -->
+    <symbol id="av-ns" viewBox="0 0 80 80">
+      <circle cx="40" cy="40" r="40" fill="#f7f0e6"/>
+      <rect x="34" y="54" width="12" height="8" rx="4" fill="#f2c9a8"/>
+      <ellipse cx="40" cy="73" rx="20" ry="11" fill="#8a7a60"/>
+      <ellipse cx="40" cy="37" rx="15" ry="17" fill="#f2c9a8"/>
+      <!-- セミロングヘア（黒）・ふわっとした形 -->
+      <ellipse cx="40" cy="21" rx="15" ry="9" fill="#1a1008"/>
+      <ellipse cx="25" cy="37" rx="5.5" ry="16" fill="#1a1008"/>
+      <ellipse cx="55" cy="37" rx="5.5" ry="16" fill="#1a1008"/>
+      <ellipse cx="26" cy="52" rx="5" ry="7" fill="#1a1008"/>
+      <ellipse cx="54" cy="52" rx="5" ry="7" fill="#1a1008"/>
+      <ellipse cx="32" cy="37" rx="3" ry="3.2" fill="#fff"/>
+      <ellipse cx="48" cy="37" rx="3" ry="3.2" fill="#fff"/>
+      <circle cx="32" cy="38" r="2" fill="#2a1a0a"/>
+      <circle cx="48" cy="38" r="2" fill="#2a1a0a"/>
+      <circle cx="33" cy="37" r="0.6" fill="#fff"/>
+      <circle cx="49" cy="37" r="0.6" fill="#fff"/>
+      <path d="M29 33 Q32 31.5 35 33" stroke="#1a1008" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+      <path d="M45 33 Q48 31.5 51 33" stroke="#1a1008" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+      <path d="M39 41 Q40 43 41 41" stroke="#c49070" stroke-width="1" fill="none"/>
+      <path d="M34 46 Q40 50 46 46" stroke="#c07858" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+      <ellipse cx="27" cy="44" rx="4" ry="2.5" fill="#f0a090" opacity="0.38"/>
+      <ellipse cx="53" cy="44" rx="4" ry="2.5" fill="#f0a090" opacity="0.38"/>
+    </symbol>
+
+  </defs>
+</svg>
+
+<!-- ケアマネジャー -->
+<div class="staff-section">
+  <div class="staff-section-head">
+    <span class="staff-section-badge">居宅介護支援</span>
+    <span class="staff-section-title">ケアマネジャー</span>
+  </div>
+  <p class="staff-section-desc">お一人おひとりの状況に寄り添い、ケアプランの作成から各サービスの調整まで、生活全体をトータルでサポートします。どんな小さなことでも、まずはご相談ください。</p>
+
+  <div class="staff-grid">
+
+    <div class="staff-card">
+      <svg class="staff-avatar" viewBox="0 0 80 80"><use href="#av-ys"/></svg>
+      <div class="staff-initial">Y.S</div>
+      <div class="staff-role-tag staff-role-tag--cm">介護支援専門員</div>
+      <div class="staff-message">ご利用者さまとご家族の想いを大切に、一緒に考えながらサポートします。</div>
+    </div>
+
+    <div class="staff-card">
+      <svg class="staff-avatar" viewBox="0 0 80 80"><use href="#av-sm"/></svg>
+      <div class="staff-initial">S.M</div>
+      <div class="staff-role-tag staff-role-tag--cm">介護支援専門員</div>
+      <div class="staff-message">地域のつながりを活かし、安心できる毎日を一緒につくっていきます。</div>
+    </div>
+
+    <div class="staff-card">
+      <svg class="staff-avatar" viewBox="0 0 80 80"><use href="#av-mw-cm"/></svg>
+      <div class="staff-initial">M.W</div>
+      <div class="staff-role-tag staff-role-tag--cm">介護支援専門員</div>
+      <div class="staff-message">住み慣れた阿蘇で長く過ごせるよう、丁寧なプラン作成を心がけています。</div>
+    </div>
+
+    <div class="staff-card">
+      <svg class="staff-avatar" viewBox="0 0 80 80"><use href="#av-st"/></svg>
+      <div class="staff-initial">S.T</div>
+      <div class="staff-role-tag staff-role-tag--cm">介護支援専門員</div>
+      <div class="staff-message">医療・介護・福祉の連携を大切に、笑顔をモットーに「その人らしい生活」を支えます。</div>
+    </div>
+
+    <div class="staff-card">
+      <svg class="staff-avatar" viewBox="0 0 80 80"><use href="#av-fk"/></svg>
+      <div class="staff-initial">F.K</div>
+      <div class="staff-role-tag staff-role-tag--cm">介護支援専門員</div>
+      <div class="staff-message">いつでも気軽に話せる、身近な相談相手でありたいと思っています。</div>
+    </div>
+
+  </div>
+</div>
+
+<div class="staff-divider"><hr></div>
+
+<!-- ヘルパー -->
+<div class="staff-section">
+  <div class="staff-section-head">
+    <span class="staff-section-badge staff-section-badge--helper">訪問介護</span>
+    <span class="staff-section-title">ヘルパー</span>
+  </div>
+  <p class="staff-section-desc">ご自宅を訪問し、身体介護・生活援助をお手伝いします。日々の暮らしの中で、小さな変化にも気づける存在でありたいと思っています。</p>
+  <div class="staff-note">※このほかに登録ヘルパースタッフが多数在籍し、きめ細かなサービス提供を支えています。</div>
+
+  <div class="staff-grid">
+
+    <div class="staff-card staff-card--helper">
+      <svg class="staff-avatar" viewBox="0 0 80 80"><use href="#av-kk"/></svg>
+      <div class="staff-initial">K.K</div>
+      <div class="staff-role-tag staff-role-tag--helper">訪問介護員</div>
+      <div class="staff-message">笑顔でお伺いします。何でもお気軽におっしゃってください。</div>
+    </div>
+
+    <div class="staff-card staff-card--helper">
+      <svg class="staff-avatar" viewBox="0 0 80 80"><use href="#av-ss"/></svg>
+      <div class="staff-initial">S.S</div>
+      <div class="staff-role-tag staff-role-tag--helper">訪問介護員</div>
+      <div class="staff-message">毎日の生活が少しでも楽に、楽しくなるようにお手伝いします。</div>
+    </div>
+
+    <div class="staff-card staff-card--helper">
+      <svg class="staff-avatar" viewBox="0 0 80 80"><use href="#av-mw-h"/></svg>
+      <div class="staff-initial">M.W</div>
+      <div class="staff-role-tag staff-role-tag--helper">訪問介護員</div>
+      <div class="staff-message">ご本人のペースを大切に、丁寧に寄り添います。</div>
+    </div>
+
+  </div>
+</div>
+
+<div class="staff-divider"><hr></div>
+
+<!-- 事務 -->
+<div class="staff-section">
+  <div class="staff-section-head">
+    <span class="staff-section-badge staff-section-badge--office">事務</span>
+    <span class="staff-section-title">事務スタッフ</span>
+  </div>
+  <p class="staff-section-desc">お電話・来所での対応から書類の管理まで、事業所の日々の運営を支えています。お気軽にお問い合わせください。</p>
+
+  <div class="staff-grid" style="max-width:220px;">
+    <div class="staff-card staff-card--office">
+      <svg class="staff-avatar" viewBox="0 0 80 80"><use href="#av-ns"/></svg>
+      <div class="staff-initial">N.S</div>
+      <div class="staff-role-tag staff-role-tag--office">事務担当</div>
+      <div class="staff-message">いつでも笑顔でお迎えします。どうぞお気軽にお声がけください。</div>
+    </div>
+  </div>
+</div>
+
+<div class="floral-sep2" style="margin-top:1rem;"></div>
+
+<!-- CTAバナー -->
+<div style="background:var(--green-pale);padding:3rem 1.5rem;text-align:center;">
+  <div class="section-label" style="text-align:center;color:var(--terra);">Contact</div>
+  <div class="section-title" style="text-align:center;margin-bottom:0.8rem;">まずはお気軽にご相談ください</div>
+  <p style="font-size:14px;color:var(--text-mute);margin-bottom:1.6rem;line-height:1.9;">スタッフ一同、皆さまのご連絡をお待ちしています。<br>お電話・メールどちらでもお気軽にどうぞ。</p>
+  <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+    <a href="tel:0967320307" style="display:inline-flex;align-items:center;gap:8px;background:var(--green);color:#fff;border-radius:28px;padding:12px 28px;font-size:15px;font-weight:500;letter-spacing:0.06em;text-decoration:none;box-shadow:0 3px 12px rgba(74,124,94,0.3);">📞 0967-32-0307</a>
+    <a href="index.html#contact" style="display:inline-flex;align-items:center;gap:8px;background:#fff;color:var(--green);border:1.5px solid var(--green);border-radius:28px;padding:12px 28px;font-size:15px;font-weight:500;letter-spacing:0.06em;text-decoration:none;">✉️ メールでのお問い合わせ</a>
+  </div>
+</div>
+
+<footer>
+  <ul class="footer-nav">
+    <li><a href="index.html">ホーム</a></li>
+    <li><a href="index.html#about">ご挨拶</a></li>
+    <li><a href="index.html#services">サービス</a></li>
+    <li><a href="blog.html">ブログ</a></li>
+    <li><a href="faq.html">よくある質問</a></li>
+    <li><a href="staff.html">スタッフ紹介</a></li>
+    <li><a href="index.html#contact">お問い合わせ</a></li>
+    <li><a href="index.html#access">アクセス</a></li>
+  </ul>
+  <strong>ケアステーション ゆう</strong><br>
+  〒869-2301 熊本県阿蘇市内牧1214-32　Tel: 0967-32-0307<br>
+  <span class="footer-green">阿蘇の大自然のなかで、あなたの暮らしに寄り添います。</span>
+  <span style="font-size:11px;margin-top:6px;display:block;opacity:0.45;">© 2024 Care Station Yu. All rights reserved.</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
