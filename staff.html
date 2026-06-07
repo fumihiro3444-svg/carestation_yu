@@ -44,6 +44,7 @@
       .staff-avatar{width:60px;height:60px}
       .staff-hero-stats{gap:1.2rem}
       .staff-hero-stat-num{font-size:26px}
+      .staff-grid-single{grid-template-columns:1fr !important;max-width:220px !important}
     }
   </style>
 </head>
@@ -89,7 +90,7 @@
     <div class="staff-hero-stat-sep"></div>
     <div class="staff-hero-stat">
       <div class="staff-hero-stat-num">3名</div>
-      <div class="staff-hero-stat-label">ヘルパー</div>
+      <div class="staff-hero-stat-label">正社員ヘルパー</div>
     </div>
     <div class="staff-hero-stat-sep"></div>
     <div class="staff-hero-stat">
@@ -160,60 +161,66 @@
       <ellipse cx="53" cy="44" rx="4" ry="2.5" fill="#f0a090" opacity="0.38"/>
     </symbol>
 
-    <!-- ★ M.W（ケアマネ）：ケアマネ女性・ショート（黒髪） -->
+    <!-- ★ M.W（ケアマネ）：ケアマネ女性・若めショート（黒髪・サイドバング） -->
     <symbol id="av-mw-cm" viewBox="0 0 80 80">
       <circle cx="40" cy="40" r="40" fill="#e6f0ea"/>
       <rect x="34" y="54" width="12" height="8" rx="4" fill="#f2c9a8"/>
       <ellipse cx="40" cy="73" rx="20" ry="11" fill="#4a7c5e"/>
       <ellipse cx="40" cy="37" rx="15" ry="17" fill="#f2c9a8"/>
-      <!-- ショートヘア（黒）・前髪あり -->
-      <ellipse cx="40" cy="22" rx="15" ry="9" fill="#1a1008"/>
-      <ellipse cx="25" cy="31" rx="4.5" ry="9" fill="#1a1008"/>
-      <ellipse cx="55" cy="31" rx="4.5" ry="9" fill="#1a1008"/>
-      <rect x="25" y="37" width="4" height="7" rx="2" fill="#1a1008"/>
-      <rect x="51" y="37" width="4" height="7" rx="2" fill="#1a1008"/>
-      <!-- 前髪 -->
-      <path d="M24 26 Q32 20 40 20 Q48 20 56 26" fill="#1a1008"/>
+      <!-- 若めショート：トップふんわり・耳上スッキリ -->
+      <ellipse cx="40" cy="20" rx="16" ry="10" fill="#1a1008"/>
+      <ellipse cx="25" cy="28" rx="4" ry="8" fill="#1a1008"/>
+      <ellipse cx="55" cy="28" rx="4" ry="8" fill="#1a1008"/>
+      <!-- サイドバング（流し前髪・若い印象） -->
+      <path d="M24 24 Q30 16 42 18 Q50 18 55 23" fill="#1a1008"/>
+      <path d="M24 24 Q28 28 30 33" fill="#1a1008"/>
+      <!-- トップのふくらみ -->
+      <ellipse cx="40" cy="17" rx="13" ry="7" fill="#1a1008"/>
       <ellipse cx="32" cy="37" rx="3" ry="3.2" fill="#fff"/>
       <ellipse cx="48" cy="37" rx="3" ry="3.2" fill="#fff"/>
       <circle cx="32" cy="38" r="2" fill="#2a1a0a"/>
       <circle cx="48" cy="38" r="2" fill="#2a1a0a"/>
       <circle cx="33" cy="37" r="0.6" fill="#fff"/>
       <circle cx="49" cy="37" r="0.6" fill="#fff"/>
-      <path d="M29 33 Q32 31.5 35 33" stroke="#1a1008" stroke-width="1.3" fill="none" stroke-linecap="round"/>
-      <path d="M45 33 Q48 31.5 51 33" stroke="#1a1008" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+      <!-- 細めアーチ眉（若い印象） -->
+      <path d="M29 33 Q32 31 35 33" stroke="#1a1008" stroke-width="1.1" fill="none" stroke-linecap="round"/>
+      <path d="M45 33 Q48 31 51 33" stroke="#1a1008" stroke-width="1.1" fill="none" stroke-linecap="round"/>
       <path d="M39 41 Q40 43 41 41" stroke="#c49070" stroke-width="1" fill="none"/>
-      <path d="M34 46 Q40 50 46 46" stroke="#c07858" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-      <ellipse cx="27" cy="44" rx="4" ry="2.5" fill="#f0a090" opacity="0.38"/>
-      <ellipse cx="53" cy="44" rx="4" ry="2.5" fill="#f0a090" opacity="0.38"/>
+      <!-- 明るめの口（笑顔ぎみ） -->
+      <path d="M34 46 Q40 51 46 46" stroke="#d07868" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+      <ellipse cx="27" cy="44" rx="4" ry="2.5" fill="#f0a090" opacity="0.45"/>
+      <ellipse cx="53" cy="44" rx="4" ry="2.5" fill="#f0a090" opacity="0.45"/>
     </symbol>
 
-    <!-- ★ S.T：ケアマネ女性・セミロング（黒髪） -->
+    <!-- ★ S.T：ケアマネ女性・若めセミロング（黒髪・ゆるふわ） -->
     <symbol id="av-st" viewBox="0 0 80 80">
       <circle cx="40" cy="40" r="40" fill="#e6f0ea"/>
       <rect x="34" y="54" width="12" height="8" rx="4" fill="#f2c9a8"/>
       <ellipse cx="40" cy="73" rx="20" ry="11" fill="#4a7c5e"/>
       <ellipse cx="40" cy="37" rx="15" ry="17" fill="#f2c9a8"/>
-      <!-- セミロングヘア（黒）・センター分け -->
-      <ellipse cx="40" cy="21" rx="15" ry="9" fill="#1a1008"/>
-      <ellipse cx="25" cy="36" rx="5.5" ry="15" fill="#1a1008"/>
-      <ellipse cx="55" cy="36" rx="5.5" ry="15" fill="#1a1008"/>
-      <ellipse cx="26" cy="51" rx="4.5" ry="6" fill="#1a1008"/>
-      <ellipse cx="54" cy="51" rx="4.5" ry="6" fill="#1a1008"/>
-      <!-- センター分け線 -->
-      <path d="M40 12 Q40 20 40 26" stroke="#2a1808" stroke-width="1" fill="none"/>
+      <!-- 若めセミロング：ゆるふわ・毛先が外にはねる -->
+      <ellipse cx="40" cy="20" rx="16" ry="10" fill="#1a1008"/>
+      <!-- 左サイド：毛先が外はね -->
+      <ellipse cx="24" cy="36" rx="5" ry="16" fill="#1a1008"/>
+      <path d="M19 50 Q17 60 20 67 Q22 72 27 70 Q23 65 22 58 Q21 52 22 46" fill="#1a1008"/>
+      <!-- 右サイド：毛先が外はね -->
+      <ellipse cx="56" cy="36" rx="5" ry="16" fill="#1a1008"/>
+      <path d="M61 50 Q63 60 60 67 Q58 72 53 70 Q57 65 58 58 Q59 52 58 46" fill="#1a1008"/>
+      <!-- 前髪：斜め流し -->
+      <path d="M24 22 Q32 14 44 16 Q52 17 57 23" fill="#1a1008"/>
       <ellipse cx="32" cy="37" rx="3" ry="3.2" fill="#fff"/>
       <ellipse cx="48" cy="37" rx="3" ry="3.2" fill="#fff"/>
       <circle cx="32" cy="38" r="2" fill="#2a1a0a"/>
       <circle cx="48" cy="38" r="2" fill="#2a1a0a"/>
       <circle cx="33" cy="37" r="0.6" fill="#fff"/>
       <circle cx="49" cy="37" r="0.6" fill="#fff"/>
-      <path d="M29 33 Q32 31.5 35 33" stroke="#1a1008" stroke-width="1.3" fill="none" stroke-linecap="round"/>
-      <path d="M45 33 Q48 31.5 51 33" stroke="#1a1008" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+      <!-- 細めアーチ眉 -->
+      <path d="M29 33 Q32 31 35 33" stroke="#1a1008" stroke-width="1.1" fill="none" stroke-linecap="round"/>
+      <path d="M45 33 Q48 31 51 33" stroke="#1a1008" stroke-width="1.1" fill="none" stroke-linecap="round"/>
       <path d="M39 41 Q40 43 41 41" stroke="#c49070" stroke-width="1" fill="none"/>
-      <path d="M34 46 Q40 50 46 46" stroke="#c07858" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-      <ellipse cx="27" cy="44" rx="4" ry="2.5" fill="#f0a090" opacity="0.38"/>
-      <ellipse cx="53" cy="44" rx="4" ry="2.5" fill="#f0a090" opacity="0.38"/>
+      <path d="M34 46 Q40 51 46 46" stroke="#d07868" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+      <ellipse cx="27" cy="44" rx="4" ry="2.5" fill="#f0a090" opacity="0.45"/>
+      <ellipse cx="53" cy="44" rx="4" ry="2.5" fill="#f0a090" opacity="0.45"/>
     </symbol>
 
     <!-- ★ F.K：ケアマネ男性・眼鏡・白髪交じり -->
@@ -413,7 +420,7 @@
 <div class="staff-section">
   <div class="staff-section-head">
     <span class="staff-section-badge staff-section-badge--helper">訪問介護</span>
-    <span class="staff-section-title">ヘルパー</span>
+    <span class="staff-section-title">ヘルパー（正社員）</span>
   </div>
   <p class="staff-section-desc">ご自宅を訪問し、身体介護・生活援助をお手伝いします。日々の暮らしの中で、小さな変化にも気づける存在でありたいと思っています。</p>
   <div class="staff-note">※このほかに登録ヘルパースタッフが多数在籍し、きめ細かなサービス提供を支えています。</div>
@@ -454,7 +461,7 @@
   </div>
   <p class="staff-section-desc">お電話・来所での対応から書類の管理まで、事業所の日々の運営を支えています。お気軽にお問い合わせください。</p>
 
-  <div class="staff-grid" style="max-width:220px;">
+  <div class="staff-grid staff-grid-single" style="max-width:220px;">
     <div class="staff-card staff-card--office">
       <svg class="staff-avatar" viewBox="0 0 80 80"><use href="#av-ns"/></svg>
       <div class="staff-initial">N.S</div>
