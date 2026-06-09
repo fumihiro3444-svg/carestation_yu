@@ -73,4 +73,12 @@
     <priority>0.6</priority>
   </url>
 
+<!-- ブログ記事第6回 -->
+<url>
+    <loc>https://fumihiro3444-svg.github.io/carestation_yu/blog-post-2026-06-09.html</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.6</priority>
+  </url>
+
 </urlset>
