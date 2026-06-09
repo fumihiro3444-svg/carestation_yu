@@ -1,84 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-  <!-- トップページ -->
   <url>
     <loc>https://fumihiro3444-svg.github.io/carestation_yu/</loc>
     <lastmod>2026-06-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
-
-  <!-- よくある質問 -->
   <url>
     <loc>https://fumihiro3444-svg.github.io/carestation_yu/faq.html</loc>
     <lastmod>2026-06-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- スタッフ紹介 -->
   <url>
     <loc>https://fumihiro3444-svg.github.io/carestation_yu/staff.html</loc>
     <lastmod>2026-06-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- ブログ一覧 -->
   <url>
     <loc>https://fumihiro3444-svg.github.io/carestation_yu/blog.html</loc>
     <lastmod>2026-06-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
-
-  <!-- ブログ記事第1回 -->
   <url>
     <loc>https://fumihiro3444-svg.github.io/carestation_yu/blog-post-2026-05-28.html</loc>
     <lastmod>2026-05-28</lastmod>
     <changefreq>never</changefreq>
     <priority>0.6</priority>
   </url>
-
-  <!-- ブログ記事第2回 -->
   <url>
     <loc>https://fumihiro3444-svg.github.io/carestation_yu/blog-post-2026-05-29.html</loc>
     <lastmod>2026-05-29</lastmod>
     <changefreq>never</changefreq>
     <priority>0.6</priority>
   </url>
-
-  <!-- ブログ記事第3回 -->
   <url>
     <loc>https://fumihiro3444-svg.github.io/carestation_yu/blog-post-2026-05-30.html</loc>
     <lastmod>2026-05-30</lastmod>
     <changefreq>never</changefreq>
     <priority>0.6</priority>
   </url>
-
-  <!-- ブログ記事第4回 -->
   <url>
     <loc>https://fumihiro3444-svg.github.io/carestation_yu/blog-post-2026-05-31.html</loc>
     <lastmod>2026-05-31</lastmod>
     <changefreq>never</changefreq>
     <priority>0.6</priority>
   </url>
-
-  <!-- ブログ記事第5回 -->
   <url>
     <loc>https://fumihiro3444-svg.github.io/carestation_yu/blog-post-2026-06-05.html</loc>
     <lastmod>2026-06-05</lastmod>
     <changefreq>never</changefreq>
     <priority>0.6</priority>
   </url>
-
-<!-- ブログ記事第6回 -->
-<url>
+  <url>
     <loc>https://fumihiro3444-svg.github.io/carestation_yu/blog-post-2026-06-09.html</loc>
     <lastmod>2026-06-09</lastmod>
     <changefreq>never</changefreq>
     <priority>0.6</priority>
   </url>
-
 </urlset>
