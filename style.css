@@ -153,7 +153,7 @@ img { max-width: 100%; display: block; object-fit: cover; }
 .post-eyecatch img { width: 100%; height: auto; object-fit: cover; }
 .post-eyecatch img[src$=".svg"] { height: auto; object-fit: contain; }
 /* 写真なしの場合のプレースホルダー */
-.post-eyecatch-placeholder { height: 260px; background: linear-gradient(135deg, var(--green-pale), var(--terra-pale)); border-radius: 14px; margin-bottom: 2rem; display: flex; align-items: center; justify-content: center; color: var(--text-mute); font-size: 13px; letter-spacing: 0.1em; }
+.post-eyecatch-placeholder { background: linear-gradient(135deg, var(--green-pale), var(--terra-pale)); border-radius: 14px; margin-bottom: 2rem; display: block; min-height: 0; color: var(--text-mute); font-size: 13px; letter-spacing: 0.1em; overflow: hidden; }
 .post-body { font-size: 15.5px; line-height: 2.1; color: var(--text-mid); }
 .post-body p { margin-bottom: 1.4rem; }
 .post-body img { width: 100%; border-radius: 10px; margin: 1.5rem 0; }
