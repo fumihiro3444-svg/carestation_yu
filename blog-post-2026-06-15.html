@@ -67,6 +67,31 @@
 
   </div>
 
+  <!-- LINEシェアボタン -->
+  <div style="text-align:center; margin: 2.5rem 0 1.5rem;">
+    <a id="line-share-btn"
+       href="#"
+       target="_blank"
+       rel="noopener"
+       style="display:inline-flex; align-items:center; gap:10px;
+              background:#06C755; color:#fff; text-decoration:none;
+              padding:14px 32px; border-radius:50px;
+              font-size:15px; font-weight:bold;
+              box-shadow: 0 3px 10px rgba(6,199,85,0.35);">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2C6.477 2 2 6.145 2 11.243c0 2.951 1.558 5.574 4 7.31V22l3.5-2.5 2.5.5c5.523 0 10-4.145 10-9.243S17.523 2 12 2z"/>
+      </svg>
+      この記事をLINEでシェアする
+    </a>
+  </div>
+  <script>
+    (function(){
+      var btn = document.getElementById('line-share-btn');
+      var url = encodeURIComponent(location.href);
+      btn.href = 'https://social-plugins.line.me/lineit/share?url=' + url;
+    })();
+  </script>
+
   <hr class="post-divider">
 
   <div class="post-nav">
