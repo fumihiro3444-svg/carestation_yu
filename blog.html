@@ -52,50 +52,99 @@
   <div class="page-hero-sub">阿蘇の四季や日々のできごとをお届けします</div>
 </div>
 
+<!-- カテゴリフィルター -->
+<div class="blog-filter">
+  <button class="blog-filter-btn active" data-filter="all">すべて</button>
+  <button class="blog-filter-btn" data-filter="nature">🌿 阿蘇の自然・日常</button>
+  <button class="blog-filter-btn" data-filter="caremanager">💼 ケアマネの仕事</button>
+  <button class="blog-filter-btn" data-filter="health">🏥 介護・健康情報</button>
+</div>
+
+<style>
+  .blog-filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 1.2rem 1.5rem 2rem;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+  .blog-filter-btn {
+    padding: 8px 20px;
+    border-radius: 50px;
+    border: 2px solid var(--green, #4a7c5e);
+    background: #fff;
+    color: var(--green, #4a7c5e);
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .blog-filter-btn:hover,
+  .blog-filter-btn.active {
+    background: var(--green, #4a7c5e);
+    color: #fff;
+  }
+  .blog-list-item {
+    transition: opacity 0.25s, transform 0.25s;
+  }
+  .blog-list-item.hidden {
+    display: none;
+  }
+  .blog-no-result {
+    text-align: center;
+    padding: 3rem 1rem;
+    color: #8a7560;
+    font-size: 15px;
+    display: none;
+  }
+</style>
+
 <section class="blog-list-section">
   <div class="blog-list">
 
-    <!-- ★ 記事を追加するときは、この <a>〜</a> のブロックを上にコピーして内容を書き換えてください ★ -->
+    <!-- ★ 記事を追加するときは、この <a>〜</a> のブロックを上にコピーして内容を書き換えてください ★
+         data-category には  nature／caremanager／health  のいずれかを指定してください ★ -->
 
-<a href="blog-post-2026-06-15.html" class="blog-list-item">
+    <a href="blog-post-2026-06-15.html" class="blog-list-item" data-category="nature">
       <div class="blog-list-thumb">
         <img src="images/aso5.jpg" alt="阿蘇の田園風景に浮かぶ熱気球">
       </div>
       <div class="blog-list-body">
         <div class="blog-list-date">令和８年６月１５日</div>
-        <div class="blog-list-title">阿蘇の初夏、田園風景に浮かぶ熱気球 </div>
+        <div class="blog-list-title">阿蘇の初夏、田園風景に浮かぶ熱気球</div>
         <div class="blog-list-excerpt">日曜日、うっかり職場に忘れ物をしてしまいました。「休日にわざわざ取りに行くのもなぁ……」と、少し重い気持ちで車を走らせていたのですが、ふと視線を上げると、目の前にこんな素敵な景色が広がっていました。</div>
         <div class="blog-list-more">続きを読む →</div>
       </div>
     </a>
 
-
-<a href="blog-post-2026-06-11.html" class="blog-list-item">
+    <a href="blog-post-2026-06-11.html" class="blog-list-item" data-category="health">
       <div class="blog-list-thumb">
         <img src="images/weifare1.png" alt="福祉用具の上手な利用">
       </div>
       <div class="blog-list-body">
         <div class="blog-list-date">令和８年６月１１日</div>
-        <div class="blog-list-title">ガマンしないで、上手に頼る！初めての「福祉用具」選び </div>
+        <div class="blog-list-title">ガマンしないで、上手に頼る！初めての「福祉用具」選び</div>
         <div class="blog-list-excerpt">「最近、立ち上がるのがきつそうだな・・・・・・・」<br>「お風呂で滑らないか心配だけど、どうしたらいいんだろう？」</div>
         <div class="blog-list-more">続きを読む →</div>
       </div>
     </a>
 
-
-<a href="blog-post-2026-06-10.html" class="blog-list-item">
+    <a href="blog-post-2026-06-10.html" class="blog-list-item" data-category="caremanager">
       <div class="blog-list-thumb">
         <img src="images/caremanager-consultation.svg" alt="ケアマネジャーと利用者・家族の相談場面">
       </div>
       <div class="blog-list-body">
         <div class="blog-list-date">令和８年６月１０日</div>
-        <div class="blog-list-title">ケアマネジャーって何をしてくれる人？　初めて介護保険を使う方へ </div>
+        <div class="blog-list-title">ケアマネジャーって何をしてくれる人？　初めて介護保険を使う方へ</div>
         <div class="blog-list-excerpt">「親が介護保険を使うことになったけど、ケアマネジャーって何をしてくれる人なの？」——そんなご質問をよくいただきます。初めて介護保険を使う方やそのご家族にとって、ケアマネジャーという存在はなかなかイメージしにくいかもしれません。今回は、ケアマネジャーの役割をできるだけわかりやすくご説明します。</div>
         <div class="blog-list-more">続きを読む →</div>
       </div>
     </a>
 
-<a href="blog-post-2026-06-09.html" class="blog-list-item">
+    <a href="blog-post-2026-06-09.html" class="blog-list-item" data-category="health">
       <div class="blog-list-thumb">
         <img src="images/aso4.jpg" alt="阿蘇の梅雨の風景">
       </div>
@@ -107,7 +156,7 @@
       </div>
     </a>
 
-    <a href="blog-post-2026-06-05.html" class="blog-list-item">
+    <a href="blog-post-2026-06-05.html" class="blog-list-item" data-category="nature">
       <div class="blog-list-thumb">
         <img src="images/aso3.jpg" alt="阿蘇神社の楼門">
       </div>
@@ -119,21 +168,21 @@
       </div>
     </a>
 
- <a href="blog-post-2026-05-31.html" class="blog-list-item">
+    <a href="blog-post-2026-05-31.html" class="blog-list-item" data-category="caremanager">
       <div class="blog-list-thumb">
-         <img src="images/yu2.jpg" alt="医療連携">
+        <img src="images/yu2.jpg" alt="医療連携">
       </div>
       <div class="blog-list-body">
         <div class="blog-list-date">令和８年５月３１日</div>
-        <div class="blog-list-title">地域の「お医者様」と「介護」の架け橋として ！</div>
+        <div class="blog-list-title">地域の「お医者様」と「介護」の架け橋として！</div>
         <div class="blog-list-excerpt">私たちケアマネジャーの大切な仕事のひとつに、ご利用者さまの「主治医の先生との連携」があります。</div>
         <div class="blog-list-more">続きを読む →</div>
       </div>
     </a>
 
- <a href="blog-post-2026-05-30.html" class="blog-list-item">
+    <a href="blog-post-2026-05-30.html" class="blog-list-item" data-category="nature">
       <div class="blog-list-thumb">
-         <img src="images/aso2.jpg" alt="帰り道の阿蘇山">
+        <img src="images/aso2.jpg" alt="帰り道の阿蘇山">
       </div>
       <div class="blog-list-body">
         <div class="blog-list-date">令和８年５月３０日</div>
@@ -143,9 +192,9 @@
       </div>
     </a>
 
- <a href="blog-post-2026-05-29.html" class="blog-list-item">
+    <a href="blog-post-2026-05-29.html" class="blog-list-item" data-category="nature">
       <div class="blog-list-thumb">
-         <img src="images/yu1.jpg" alt="事務所の外観です。">
+        <img src="images/yu1.jpg" alt="事務所の外観です。">
       </div>
       <div class="blog-list-body">
         <div class="blog-list-date">令和８年５月２９日</div>
@@ -155,10 +204,9 @@
       </div>
     </a>
 
-
-    <a href="blog-post-2026-05-28.html" class="blog-list-item">
+    <a href="blog-post-2026-05-28.html" class="blog-list-item" data-category="nature">
       <div class="blog-list-thumb">
-         <img src="images/aso1.jpg" alt="二重峠からの阿蘇山です">
+        <img src="images/aso1.jpg" alt="二重峠からの阿蘇山です">
       </div>
       <div class="blog-list-body">
         <div class="blog-list-date">令和８年５月２８日</div>
@@ -168,9 +216,40 @@
       </div>
     </a>
 
-   
-     </div>
+  </div>
+  <div class="blog-no-result" id="noResult">該当する記事がありません。</div>
 </section>
+
+<script>
+  (function(){
+    var btns = document.querySelectorAll('.blog-filter-btn');
+    var items = document.querySelectorAll('.blog-list-item');
+    var noResult = document.getElementById('noResult');
+
+    btns.forEach(function(btn){
+      btn.addEventListener('click', function(){
+        var filter = this.getAttribute('data-filter');
+
+        // ボタンのactiveを切り替え
+        btns.forEach(function(b){ b.classList.remove('active'); });
+        this.classList.add('active');
+
+        // 記事の表示・非表示
+        var visible = 0;
+        items.forEach(function(item){
+          if(filter === 'all' || item.getAttribute('data-category') === filter){
+            item.classList.remove('hidden');
+            visible++;
+          } else {
+            item.classList.add('hidden');
+          }
+        });
+
+        noResult.style.display = visible === 0 ? 'block' : 'none';
+      });
+    });
+  })();
+</script>
 
 <footer>
   <ul class="footer-nav">
