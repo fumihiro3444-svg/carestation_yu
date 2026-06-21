@@ -252,48 +252,49 @@ footer strong { color: rgba(255,255,255,0.88); font-weight: 500; font-size: 15px
 .ss-slide {
   position: absolute; inset: 0;
   opacity: 0;
-  transition: opacity 1.8s ease-in-out;
+  /* フェードを少し長めにしてクロスディゾルブをなめらかに */
+  transition: opacity 2.4s ease-in-out;
 }
 .ss-slide.active { opacity: 1; }
 .ss-slide img {
   width: 100%; height: 100%;
   object-fit: cover; object-position: center;
   display: block;
-  /* ケンバーンズ：スライドがactiveのときだけアニメーション開始 */
   transform-origin: center center;
 }
 
-/* ── ケンバーンズ効果（各スライドで動きに変化をつける） ── */
-.ss-slide:nth-child(1).active img { animation: kb1 8s ease-in-out forwards; }
-.ss-slide:nth-child(2).active img { animation: kb2 8s ease-in-out forwards; }
-.ss-slide:nth-child(3).active img { animation: kb3 8s ease-in-out forwards; }
-.ss-slide:nth-child(4).active img { animation: kb4 8s ease-in-out forwards; }
-.ss-slide:nth-child(5).active img { animation: kb5 8s ease-in-out forwards; }
+/* ── ケンバーンズ効果
+     常時アニメーションさせることで、フェードアウト中も動きが止まらずなめらかに ── */
+.ss-slide:nth-child(1) img { animation: kb1 9s ease-in-out infinite alternate; }
+.ss-slide:nth-child(2) img { animation: kb2 9s ease-in-out infinite alternate; }
+.ss-slide:nth-child(3) img { animation: kb3 9s ease-in-out infinite alternate; }
+.ss-slide:nth-child(4) img { animation: kb4 9s ease-in-out infinite alternate; }
+.ss-slide:nth-child(5) img { animation: kb5 9s ease-in-out infinite alternate; }
 
-/* 中央からじんわり拡大 */
+/* 中央からじんわり拡大 → 縮小を繰り返す */
 @keyframes kb1 {
-  from { transform: scale(1.0) translate(0, 0); }
-  to   { transform: scale(1.08) translate(-1%, 1%); }
+  from { transform: scale(1.0)  translate(0,    0);    }
+  to   { transform: scale(1.08) translate(-1%,  1%);   }
 }
-/* 左上から右下へゆっくり流れる */
+/* 左上 → 右下へゆっくり流れる */
 @keyframes kb2 {
-  from { transform: scale(1.08) translate(-2%, -1%); }
-  to   { transform: scale(1.0)  translate(1%,  1%); }
+  from { transform: scale(1.08) translate(-2%, -1%);   }
+  to   { transform: scale(1.0)  translate(1%,   1%);   }
 }
-/* 右から左へゆるやかにパン */
+/* 右 → 左へゆるやかにパン */
 @keyframes kb3 {
-  from { transform: scale(1.06) translate(2%, 0); }
-  to   { transform: scale(1.0)  translate(-2%, 0.5%); }
+  from { transform: scale(1.06) translate(2%,   0);    }
+  to   { transform: scale(1.0)  translate(-2%,  0.5%); }
 }
-/* 下からふわりと上へ */
+/* 下 → 上へふわりと浮かぶ */
 @keyframes kb4 {
-  from { transform: scale(1.07) translate(0, 2%); }
-  to   { transform: scale(1.0)  translate(0.5%, -1%); }
+  from { transform: scale(1.07) translate(0,    2%);   }
+  to   { transform: scale(1.0)  translate(0.5%, -1%);  }
 }
 /* 斜めにゆっくり拡大しながら流れる */
 @keyframes kb5 {
-  from { transform: scale(1.0)  translate(1%, 1%); }
-  to   { transform: scale(1.08) translate(-1%, -1%); }
+  from { transform: scale(1.0)  translate(1%,   1%);   }
+  to   { transform: scale(1.08) translate(-1%,  -1%);  }
 }
 
 /* ── グラデーションオーバーレイ ── */
