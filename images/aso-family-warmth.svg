@@ -1,0 +1,58 @@
+<svg width="680" height="400" viewBox="0 0 680 400" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>阿蘇の穏やかな夕景と、ベンチに寄り添う親子のシルエット</title>
+<desc>やわらかい夕焼けの空と阿蘇の山並みを背景に、家の前のベンチに座って寄り添う親子2人のシルエットが描かれたイラスト</desc>
+<defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#f7e0c4"/>
+<stop offset="45%" stop-color="#f3c9a8"/>
+<stop offset="100%" stop-color="#e8b596"/>
+</linearGradient>
+<linearGradient id="mtnFar" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#c9a8a0"/>
+<stop offset="100%" stop-color="#b4938c"/>
+</linearGradient>
+</defs>
+
+<rect x="0" y="0" width="680" height="400" fill="url(#sky)"/>
+
+<circle cx="540" cy="120" r="46" fill="#fbead0" opacity="0.9"/>
+
+<path d="M0 200 Q90 140 180 190 Q260 150 340 195 Q420 155 500 200 Q580 165 680 205 L680 260 L0 260 Z" fill="url(#mtnFar)"/>
+
+<path d="M0 250 Q100 190 210 245 Q300 200 400 250 Q500 210 600 248 Q650 235 680 245 L680 400 L0 400 Z" fill="#8a9e6f"/>
+
+<path d="M0 270 Q120 235 240 268 Q360 240 480 270 Q580 250 680 268 L680 400 L0 400 Z" fill="#7c9260"/>
+
+<ellipse cx="120" cy="300" rx="220" ry="24" fill="#6f8654" opacity="0.5"/>
+<ellipse cx="500" cy="320" rx="260" ry="26" fill="#6f8654" opacity="0.4"/>
+
+<g>
+<rect x="470" y="230" width="130" height="90" rx="4" fill="#5f4a3d"/>
+<polygon points="465,230 535,190 605,230" fill="#43362d"/>
+<rect x="505" y="260" width="26" height="60" rx="2" fill="#3d2f26"/>
+<rect x="545" y="250" width="30" height="26" rx="2" fill="#f4d78e"/>
+<rect x="545" y="250" width="30" height="26" rx="2" fill="none" stroke="#3d2f26" stroke-width="1.5"/>
+</g>
+
+<rect x="360" y="288" width="110" height="12" rx="4" fill="#5f4a3d"/>
+<rect x="372" y="300" width="6" height="20" fill="#5f4a3d"/>
+<rect x="452" y="300" width="6" height="20" fill="#5f4a3d"/>
+
+<g>
+<path d="M392 288 Q392 260 415 260 Q438 260 438 288 Z" fill="#3d322b"/>
+<circle cx="415" cy="248" r="14" fill="#3d322b"/>
+<rect x="400" y="272" width="14" height="16" rx="4" fill="#3d322b"/>
+</g>
+
+<g>
+<path d="M415 282 Q415 258 432 258 Q449 258 449 282 Z" fill="#5c4a3c"/>
+<circle cx="432" cy="248" r="11" fill="#5c4a3c"/>
+<rect x="418" y="266" width="12" height="14" rx="4" fill="#5c4a3c"/>
+</g>
+
+<g opacity="0.85">
+<path d="M40 130 Q55 122 70 130" fill="none" stroke="#6b5a52" stroke-width="2" stroke-linecap="round"/>
+<path d="M60 140 Q75 132 90 140" fill="none" stroke="#6b5a52" stroke-width="2" stroke-linecap="round"/>
+<path d="M580 90 Q595 82 610 90" fill="none" stroke="#6b5a52" stroke-width="2" stroke-linecap="round"/>
+</g>
+</svg>
