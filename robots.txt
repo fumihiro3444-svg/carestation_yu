@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fumihiro3444-svg.github.io/carestation_yu/sitemap.xml
