@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <style>
+      .skin { fill: #f4c9a0; }
+      .skin-shadow { fill: #e8b688; }
+      .hair-black { fill: #3a3a3a; }
+      .hair-gray { fill: #b8b0a8; }
+      .hair-brown { fill: #6b4a3a; }
+    </style>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#fdf6ec"/>
+  <rect x="0" y="480" width="800" height="120" fill="#e8ddc8"/>
+
+  <!-- 窓と阿蘇の風景（背景の飾り） -->
+  <rect x="600" y="60" width="150" height="110" rx="6" fill="#cfe8e0" stroke="#a8c9be" stroke-width="4"/>
+  <path d="M600 150 Q640 100 680 140 Q715 105 750 150 L750 170 L600 170 Z" fill="#8fae7a"/>
+  <circle cx="720" cy="90" r="18" fill="#fbe6a2"/>
+
+  <!-- 観葉植物 -->
+  <g transform="translate(70,380)">
+    <rect x="10" y="60" width="40" height="45" rx="4" fill="#c98a5b"/>
+    <path d="M30 60 C10 20 15 -10 30 -30 C45 -10 50 20 30 60 Z" fill="#7fa363"/>
+    <path d="M30 55 C0 30 -10 5 5 -20 C20 5 25 35 30 55 Z" fill="#8fb573"/>
+    <path d="M30 55 C60 30 70 5 55 -20 C40 5 35 35 30 55 Z" fill="#6f9553"/>
+  </g>
+
+  <!-- テーブル（円卓） -->
+  <ellipse cx="400" cy="400" rx="260" ry="90" fill="#c98a5b"/>
+  <ellipse cx="400" cy="392" rx="260" ry="90" fill="#dba270"/>
+  <ellipse cx="400" cy="392" rx="230" ry="76" fill="#e8b98a"/>
+
+  <!-- テーブル上の書類・ケアプラン -->
+  <g transform="translate(340,370)">
+    <rect x="0" y="0" width="60" height="42" rx="3" fill="#ffffff" stroke="#d8cdb8" stroke-width="2"/>
+    <line x1="8" y1="10" x2="52" y2="10" stroke="#c9bfa8" stroke-width="2"/>
+    <line x1="8" y1="18" x2="52" y2="18" stroke="#c9bfa8" stroke-width="2"/>
+    <line x1="8" y1="26" x2="40" y2="26" stroke="#c9bfa8" stroke-width="2"/>
+  </g>
+  <g transform="translate(480,380)">
+    <rect x="0" y="0" width="55" height="38" rx="3" fill="#fef8ea" stroke="#d8cdb8" stroke-width="2"/>
+    <line x1="8" y1="10" x2="47" y2="10" stroke="#c9bfa8" stroke-width="2"/>
+    <line x1="8" y1="18" x2="47" y2="18" stroke="#c9bfa8" stroke-width="2"/>
+  </g>
+  <!-- 湯呑み -->
+  <ellipse cx="230" cy="400" rx="14" ry="6" fill="#8a5a3a"/>
+  <rect x="216" y="388" width="28" height="14" rx="3" fill="#a8703f"/>
+
+  <!-- === 利用者（高齢の男性、中央奥・車椅子） === -->
+  <g transform="translate(400,255)">
+    <!-- 車椅子の車輪 -->
+    <circle cx="-38" cy="145" r="34" fill="none" stroke="#8a8a8a" stroke-width="5"/>
+    <circle cx="38" cy="145" r="34" fill="none" stroke="#8a8a8a" stroke-width="5"/>
+    <!-- 体 -->
+    <path d="M-45 90 Q0 70 45 90 L48 175 Q0 195 -48 175 Z" fill="#8fb0c9"/>
+    <!-- 首・顔 -->
+    <rect x="-14" y="55" width="28" height="26" class="skin"/>
+    <ellipse cx="0" cy="40" rx="34" ry="36" class="skin"/>
+    <!-- 白髪 -->
+    <path d="M-34 30 Q-30 -6 0 -8 Q30 -6 34 30 Q28 8 0 6 Q-28 8 -34 30 Z" class="hair-gray"/>
+    <!-- 表情 -->
+    <circle cx="-12" cy="42" r="2.6" fill="#3a3a3a"/>
+    <circle cx="12" cy="42" r="2.6" fill="#3a3a3a"/>
+    <path d="M-10 56 Q0 62 10 56" stroke="#7a4a30" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <!-- 眉 -->
+    <path d="M-18 34 Q-12 31 -6 34" stroke="#999" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M6 34 Q12 31 18 34" stroke="#999" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <!-- 腕・膝掛け -->
+    <path d="M-45 100 Q0 118 45 100 L45 150 Q0 168 -45 150 Z" fill="#e0c9a8"/>
+  </g>
+
+  <!-- === ケアマネジャー（左手前・女性、資料を持つ） === -->
+  <g transform="translate(210,300)">
+    <!-- 椅子背もたれ -->
+    <rect x="-55" y="10" width="110" height="140" rx="14" fill="#a8785a" opacity="0.25"/>
+    <!-- 体（制服風） -->
+    <path d="M-48 110 Q0 88 48 110 L54 210 Q0 232 -54 210 Z" fill="#5a8a8a"/>
+    <!-- 名札 -->
+    <rect x="10" y="128" width="26" height="16" rx="2" fill="#ffffff" stroke="#3a6a6a" stroke-width="1.5"/>
+    <!-- 首 -->
+    <rect x="-13" y="72" width="26" height="24" class="skin"/>
+    <!-- 顔 -->
+    <ellipse cx="0" cy="55" rx="32" ry="34" class="skin"/>
+    <!-- 髪（ボブ・黒） -->
+    <path d="M-32 50 Q-36 5 0 2 Q36 5 32 50 Q32 20 0 18 Q-32 20 -32 50 Z" class="hair-black"/>
+    <path d="M-32 45 Q-38 75 -28 95 L-30 45 Z" class="hair-black"/>
+    <path d="M32 45 Q38 75 28 95 L30 45 Z" class="hair-black"/>
+    <!-- 表情：話している -->
+    <circle cx="-11" cy="58" r="2.8" fill="#3a3a3a"/>
+    <circle cx="11" cy="58" r="2.8" fill="#3a3a3a"/>
+    <ellipse cx="0" cy="70" rx="7" ry="5" fill="#8a4a3a"/>
+    <path d="M-16 47 Q-10 43 -4 46" stroke="#3a3a3a" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M4 46 Q10 43 16 47" stroke="#3a3a3a" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <!-- 頬 -->
+    <circle cx="-20" cy="63" r="5" fill="#f0a888" opacity="0.5"/>
+    <circle cx="20" cy="63" r="5" fill="#f0a888" opacity="0.5"/>
+    <!-- 腕とファイル -->
+    <path d="M40 120 Q65 110 78 130 L70 160 Q50 150 38 145 Z" fill="#5a8a8a"/>
+    <rect x="60" y="95" width="42" height="56" rx="3" fill="#e8865a" stroke="#c96a40" stroke-width="2" transform="rotate(8 81 123)"/>
+  </g>
+
+  <!-- === 家族（右手前・女性、心配そうに聞く） === -->
+  <g transform="translate(560,300)">
+    <path d="M-46 108 Q0 88 46 108 L52 210 Q0 230 -52 210 Z" fill="#c98a6a"/>
+    <rect x="-13" y="70" width="26" height="24" class="skin"/>
+    <ellipse cx="0" cy="53" rx="31" ry="33" class="skin"/>
+    <!-- 髪（茶・ロング） -->
+    <path d="M-31 48 Q-35 4 0 0 Q35 4 31 48 Q31 16 0 14 Q-31 16 -31 48 Z" class="hair-brown"/>
+    <path d="M-31 40 Q-42 90 -34 145 L-26 145 Q-30 90 -26 45 Z" class="hair-brown"/>
+    <path d="M31 40 Q42 90 34 145 L26 145 Q30 90 26 45 Z" class="hair-brown"/>
+    <circle cx="-11" cy="56" r="2.7" fill="#3a3a3a"/>
+    <circle cx="11" cy="56" r="2.7" fill="#3a3a3a"/>
+    <path d="M-9 68 Q0 72 9 68" stroke="#8a4a3a" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+    <path d="M-17 45 Q-10 41 -4 44" stroke="#5a4030" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M4 44 Q10 41 17 45" stroke="#5a4030" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <!-- 手を組む -->
+    <ellipse cx="0" cy="175" rx="26" ry="14" fill="#e0c9a8"/>
+  </g>
+
+  <!-- === 医師またはリハビリ職（左奥） === -->
+  <g transform="translate(280,235)">
+    <path d="M-38 85 Q0 68 38 85 L42 165 Q0 182 -42 165 Z" fill="#ffffff" stroke="#d8d8d8" stroke-width="2"/>
+    <rect x="-11" y="55" width="22" height="20" class="skin"/>
+    <ellipse cx="0" cy="42" rx="27" ry="29" class="skin"/>
+    <path d="M-27 36 Q-30 2 0 0 Q30 2 27 36 Q27 12 0 10 Q-27 12 -27 36 Z" class="hair-black"/>
+    <circle cx="-9" cy="44" r="2.3" fill="#3a3a3a"/>
+    <circle cx="9" cy="44" r="2.3" fill="#3a3a3a"/>
+    <path d="M-8 55 Q0 58 8 55" stroke="#7a4a30" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <!-- 聴診器 -->
+    <path d="M-14 78 Q-14 100 0 102 Q14 100 14 78" fill="none" stroke="#5a6a7a" stroke-width="3"/>
+    <circle cx="0" cy="104" r="6" fill="#5a6a7a"/>
+  </g>
+
+  <!-- === ヘルパー職員（右奥） === -->
+  <g transform="translate(500,235)">
+    <path d="M-36 85 Q0 68 36 85 L40 165 Q0 182 -40 165 Z" fill="#e0956a"/>
+    <rect x="-11" y="55" width="22" height="20" class="skin"/>
+    <ellipse cx="0" cy="42" rx="27" ry="29" class="skin"/>
+    <path d="M-27 38 Q-30 4 0 2 Q30 4 27 38 Q27 14 0 12 Q-27 14 -27 38 Z" class="hair-black"/>
+    <path d="M-27 32 Q-34 55 -28 78 L-25 32 Z" class="hair-black"/>
+    <path d="M27 32 Q34 55 28 78 L25 32 Z" class="hair-black"/>
+    <circle cx="-9" cy="44" r="2.3" fill="#3a3a3a"/>
+    <circle cx="9" cy="44" r="2.3" fill="#3a3a3a"/>
+    <path d="M-8 56 Q0 59 8 56" stroke="#7a4a30" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- タイトル用の余白確保のためイラストのみ、文字なし -->
+</svg>
