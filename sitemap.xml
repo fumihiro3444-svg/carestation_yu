@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://fumihiro3444-svg.github.io/carestation_yu/</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -20,7 +20,7 @@
   </url>
   <url>
     <loc>https://fumihiro3444-svg.github.io/carestation_yu/blog.html</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -132,6 +132,13 @@
     <changefreq>never</changefreq>
     <priority>0.6</priority>
   </url>
+<url>
+    <loc>https://fumihiro3444-svg.github.io/carestation_yu/blog-post-2026-07-21.html</loc>
+    <lastmod>2026-07-21</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.6</priority>
+  </url>
+
 
   <url>
     <loc>https://fumihiro3444-svg.github.io/carestation_yu/documents/juuyoujikou-setsumei.pdf</loc>
