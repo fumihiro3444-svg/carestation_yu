@@ -1,0 +1,97 @@
+<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fdf9f4"/>
+      <stop offset="100%" stop-color="#f5ece4"/>
+    </linearGradient>
+    <linearGradient id="waterGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#bfe0d8"/>
+      <stop offset="100%" stop-color="#8fc9bd"/>
+    </linearGradient>
+    <linearGradient id="glassGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.55"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.5"/>
+    </linearGradient>
+    <radialGradient id="sunGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffd9a8"/>
+      <stop offset="100%" stop-color="#c07a50"/>
+    </radialGradient>
+    <linearGradient id="fanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5a8c6c"/>
+      <stop offset="100%" stop-color="#4a7c5e"/>
+    </linearGradient>
+  </defs>
+
+  <!-- background -->
+  <rect width="800" height="450" fill="url(#bgGrad)"/>
+
+  <!-- soft decorative circles -->
+  <circle cx="700" cy="90" r="100" fill="#c07a50" opacity="0.07"/>
+  <circle cx="80" cy="380" r="110" fill="#4a7c5e" opacity="0.06"/>
+
+  <!-- gentle Aso hills silhouette -->
+  <path d="M0,350 Q120,312 220,342 Q300,308 380,342 Q460,308 560,342 Q660,314 760,342 L800,350 L800,450 L0,450 Z"
+        fill="#e6f0ea" opacity="0.55"/>
+
+  <!-- sun with heat rays, upper right -->
+  <g transform="translate(650,95)">
+    <circle cx="0" cy="0" r="46" fill="url(#sunGrad)"/>
+    <g stroke="#c07a50" stroke-width="4" stroke-linecap="round" opacity="0.7">
+      <line x1="0" y1="-66" x2="0" y2="-80"/>
+      <line x1="47" y1="-47" x2="57" y2="-57"/>
+      <line x1="66" y1="0" x2="80" y2="0"/>
+      <line x1="47" y1="47" x2="57" y2="57"/>
+      <line x1="-47" y1="47" x2="-57" y2="57"/>
+      <line x1="-47" y1="-47" x2="-57" y2="-57"/>
+    </g>
+  </g>
+
+  <!-- heat shimmer wavy lines above ground -->
+  <g stroke="#e6dccb" stroke-width="3" fill="none" opacity="0.5">
+    <path d="M470,300 Q480,285 470,270 Q460,255 470,240"/>
+    <path d="M510,300 Q520,285 510,270 Q500,255 510,240"/>
+  </g>
+
+  <!-- glass of water, central focus -->
+  <g transform="translate(260,170)">
+    <!-- shadow -->
+    <ellipse cx="90" cy="245" rx="120" ry="14" fill="#2e2820" opacity="0.06"/>
+
+    <!-- glass body -->
+    <path d="M20,20 L160,20 L145,220 Q90,240 35,220 Z" fill="url(#waterGrad)" stroke="#8fc9bd" stroke-width="2.5"/>
+
+    <!-- water surface -->
+    <ellipse cx="90" cy="60" rx="66" ry="10" fill="#eaf6f3" opacity="0.9"/>
+
+    <!-- glass shine overlay -->
+    <path d="M20,20 L160,20 L145,220 Q90,240 35,220 Z" fill="url(#glassGrad)"/>
+
+    <!-- ice cubes -->
+    <rect x="55" y="80" width="26" height="26" rx="4" fill="#ffffff" opacity="0.55" transform="rotate(12 68 93)"/>
+    <rect x="95" y="100" width="24" height="24" rx="4" fill="#ffffff" opacity="0.5" transform="rotate(-10 107 112)"/>
+
+    <!-- straw -->
+    <rect x="100" y="-25" width="10" height="90" rx="5" fill="#c07a50" transform="rotate(8 105 20)"/>
+
+    <!-- condensation droplets -->
+    <circle cx="35" cy="140" r="4" fill="#eaf6f3" opacity="0.8"/>
+    <circle cx="150" cy="120" r="3.5" fill="#eaf6f3" opacity="0.8"/>
+    <circle cx="30" cy="180" r="3" fill="#eaf6f3" opacity="0.7"/>
+  </g>
+
+  <!-- uchiwa fan, leaning beside the glass -->
+  <g transform="translate(470,210) rotate(18)">
+    <rect x="-4" y="60" width="8" height="70" rx="4" fill="#8a7560"/>
+    <ellipse cx="0" cy="20" rx="55" ry="65" fill="url(#fanGrad)" stroke="#3a6a4e" stroke-width="2"/>
+    <path d="M-40,-10 Q0,-40 40,-10" stroke="#eef6f0" stroke-width="2.5" fill="none" opacity="0.5"/>
+    <path d="M-45,20 Q0,0 45,20" stroke="#eef6f0" stroke-width="2.5" fill="none" opacity="0.5"/>
+    <path d="M-40,50 Q0,35 40,50" stroke="#eef6f0" stroke-width="2.5" fill="none" opacity="0.5"/>
+  </g>
+
+  <!-- leaf accents -->
+  <g opacity="0.5">
+    <path d="M90,410 Q100,385 128,382 Q118,408 90,410 Z" fill="#6a9e7e"/>
+    <path d="M60,80 Q72,60 96,58 Q86,80 60,80 Z" fill="#4a7c5e"/>
+  </g>
+</svg>
