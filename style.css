@@ -5,6 +5,17 @@ body { font-family: 'Zen Kaku Gothic New', sans-serif; color: #2e2820; backgroun
 a { color: inherit; text-decoration: none; }
 img { max-width: 100%; display: block; object-fit: cover; }
 
+/* 見た目には表示せず、検索エンジンや読み上げソフトにのみ伝える用 */
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 /* ===== VARIABLES ===== */
 :root {
   --green:      #4a7c5e;
