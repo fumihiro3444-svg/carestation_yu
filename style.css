@@ -30,7 +30,7 @@ img { max-width: 100%; display: block; object-fit: cover; }
   --border:     #ddd0bc;
   --text:       #2e2820;
   --text-mid:   #5a4a38;
-  --text-mute:  #8a7560;
+  --text-mute:  #6e5843;
   --text-label: #7a9070;
   --shadow-sm:  0 2px 8px rgba(80,60,30,0.10);
   --shadow-md:  0 4px 20px rgba(80,60,30,0.13);
