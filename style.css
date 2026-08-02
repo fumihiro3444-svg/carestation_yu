@@ -139,6 +139,59 @@ img { max-width: 100%; display: block; object-fit: cover; }
   display: flex; align-items: center; justify-content: center; gap: 10px;
 }
 
+/* ===== 専門職の方へ（ケアマネ・包括支援センター向け導線） ===== */
+.pro-notice {
+  background: var(--green-pale);
+  border-top: 1px solid var(--green-light);
+  border-bottom: 1px solid var(--green-light);
+  padding: 28px 20px;
+}
+.pro-notice-inner {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+.pro-notice-label {
+  font-family: 'Shippori Mincho', serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--green-dark);
+  margin-bottom: 8px;
+}
+.pro-notice-text {
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+  font-size: 0.92rem;
+  color: var(--text-mute);
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+.pro-notice-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+  font-size: 0.95rem;
+}
+.pro-notice-link {
+  color: var(--green-dark);
+  font-weight: 700;
+  text-decoration: none;
+}
+.pro-notice-link:hover {
+  text-decoration: underline;
+}
+.pro-notice-fax {
+  color: var(--text-mute);
+}
+@media (max-width: 600px) {
+  .pro-notice-contact {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
 /* ===== STRIPE ===== */
 .stripe { background: linear-gradient(135deg, #e8f2ec 0%, #f0ece2 100%); padding: 4rem 1.5rem; position: relative; overflow: hidden; }
 .stripe::before { content: ''; position: absolute; inset: 0; background-image: radial-gradient(circle at 20% 50%, rgba(106,158,126,0.12) 0%, transparent 50%), radial-gradient(circle at 80% 50%, rgba(192,122,80,0.08) 0%, transparent 50%); }
