@@ -1,0 +1,84 @@
+<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fdf9f4"/>
+      <stop offset="100%" stop-color="#f5ece4"/>
+    </linearGradient>
+    <linearGradient id="roofGreenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#6a9e7e"/>
+      <stop offset="100%" stop-color="#4a7c5e"/>
+    </linearGradient>
+    <linearGradient id="roofTerraGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#d69268"/>
+      <stop offset="100%" stop-color="#c07a50"/>
+    </linearGradient>
+    <linearGradient id="wallGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#fdf6ee"/>
+    </linearGradient>
+  </defs>
+
+  <!-- background -->
+  <rect width="800" height="450" fill="url(#bgGrad2)"/>
+
+  <!-- soft decorative circles -->
+  <circle cx="80" cy="70" r="90" fill="#4a7c5e" opacity="0.06"/>
+  <circle cx="730" cy="80" r="80" fill="#c07a50" opacity="0.06"/>
+
+  <!-- gentle hills, left (阿蘇側) -->
+  <path d="M-20,300 Q90,255 200,290 Q260,305 320,300 L320,450 L-20,450 Z" fill="#e6f0ea" opacity="0.7"/>
+  <path d="M-20,330 Q100,300 220,325 L220,450 L-20,450 Z" fill="#dcebe2" opacity="0.6"/>
+
+  <!-- gentle hills, right (八代・氷川側) -->
+  <path d="M480,300 Q560,265 650,290 Q720,310 820,295 L820,450 L480,450 Z" fill="#f5ece4" opacity="0.8"/>
+  <path d="M500,335 Q600,310 820,330 L820,450 L500,450 Z" fill="#f0e0d2" opacity="0.6"/>
+
+  <!-- connecting dotted path between the two houses, gentle arc -->
+  <path d="M240,250 Q400,130 560,235" fill="none" stroke="#c9bda6" stroke-width="3" stroke-linecap="round" stroke-dasharray="2 14"/>
+
+  <!-- small heart at the midpoint of the connecting line, warm touch -->
+  <g transform="translate(388,155)">
+    <path d="M12,22 C-6,10 -6,-6 8,-6 C12,-6 12,-2 12,-2 C12,-2 12,-6 16,-6 C30,-6 30,10 12,22 Z"
+          fill="#c07a50" opacity="0.85"/>
+  </g>
+
+  <!-- left house: 阿蘇側 (green roof) -->
+  <g transform="translate(150,230)">
+    <rect x="0" y="45" width="110" height="80" fill="url(#wallGrad)" stroke="#e6dccb" stroke-width="2"/>
+    <path d="M-14,50 L55,0 L124,50 Z" fill="url(#roofGreenGrad)"/>
+    <rect x="30" y="70" width="26" height="30" fill="#8fc9bd" opacity="0.5"/>
+    <rect x="70" y="70" width="26" height="55" fill="#a8987a"/>
+    <rect x="76" y="90" width="6" height="6" rx="1" fill="#fdf6ee"/>
+  </g>
+
+  <!-- gentle faceless figure beside left house, hand raised warmly -->
+  <g transform="translate(90,290)">
+    <path d="M18,90 Q14,55 34,48 Q54,55 50,90 Z" fill="url(#roofGreenGrad)"/>
+    <circle cx="34" cy="34" r="17" fill="#f0ddc4"/>
+    <path d="M18,32 Q20,10 34,9 Q48,10 50,32 Q42,20 34,20 Q26,20 18,32 Z" fill="#5c4a3a"/>
+    <!-- raised arm, gentle wave -->
+    <path d="M50,58 Q68,50 66,32" fill="none" stroke="url(#roofGreenGrad)" stroke-width="11" stroke-linecap="round"/>
+    <circle cx="66" cy="30" r="7" fill="#f0ddc4"/>
+  </g>
+
+  <!-- right house: 八代・氷川側 (terra roof) -->
+  <g transform="translate(560,230)">
+    <rect x="0" y="45" width="110" height="80" fill="url(#wallGrad)" stroke="#e6dccb" stroke-width="2"/>
+    <path d="M-14,50 L55,0 L124,50 Z" fill="url(#roofTerraGrad)"/>
+    <rect x="30" y="70" width="26" height="30" fill="#f5ece4"/>
+    <rect x="70" y="70" width="26" height="55" fill="#c9bda6"/>
+    <rect x="76" y="90" width="6" height="6" rx="1" fill="#fffaf3"/>
+  </g>
+
+  <!-- small gentle bird carrying the connection motif, near the arc -->
+  <g transform="translate(430,110)" opacity="0.8">
+    <path d="M0,6 Q8,-4 16,6 Q8,2 0,6 Z" fill="#6a9e7e"/>
+    <path d="M16,6 Q24,-4 32,6 Q24,2 16,6 Z" fill="#6a9e7e"/>
+  </g>
+
+  <!-- leaf accents -->
+  <g opacity="0.5">
+    <path d="M700,370 Q712,348 738,346 Q728,370 700,370 Z" fill="#4a7c5e"/>
+    <path d="M70,400 Q80,378 106,376 Q96,398 70,400 Z" fill="#6a9e7e"/>
+  </g>
+</svg>
