@@ -1,0 +1,118 @@
+<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8f0e2"/>
+      <stop offset="100%" stop-color="#f2e3cc"/>
+    </linearGradient>
+    <linearGradient id="floorGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ecddc2"/>
+      <stop offset="100%" stop-color="#e6d3b3"/>
+    </linearGradient>
+    <linearGradient id="tableGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#dcc7a3"/>
+      <stop offset="100%" stop-color="#c7a97e"/>
+    </linearGradient>
+  </defs>
+
+  <!-- background -->
+  <rect width="800" height="450" fill="url(#bgGrad4)"/>
+  <!-- floor band -->
+  <rect x="0" y="330" width="800" height="120" fill="url(#floorGrad)"/>
+
+  <!-- window, top right -->
+  <g transform="translate(620,50)">
+    <rect x="0" y="0" width="150" height="170" rx="6" fill="#dcebe2" stroke="#a9c4b3" stroke-width="5"/>
+    <line x1="75" y1="0" x2="75" y2="170" stroke="#a9c4b3" stroke-width="5"/>
+    <line x1="0" y1="85" x2="150" y2="85" stroke="#a9c4b3" stroke-width="5"/>
+    <circle cx="110" cy="42" r="20" fill="#f0c94a"/>
+    <path d="M0,85 Q38,55 75,85 L75,85 L0,85 Z" fill="#9fc3ab"/>
+    <path d="M75,85 Q113,58 150,85 L150,85 L75,85 Z" fill="#9fc3ab"/>
+  </g>
+
+  <!-- small sprout, above the whiteboard -->
+  <g transform="translate(320,58)">
+    <path d="M0,26 Q-2,10 0,0 Q2,10 0,26 Z" fill="#6a9e7e"/>
+    <path d="M0,14 Q-16,10 -20,-4 Q-4,-4 0,14 Z" fill="#6a9e7e"/>
+    <path d="M0,14 Q16,10 20,-4 Q4,-4 0,14 Z" fill="#7cae8c"/>
+    <path d="M-10,26 L10,26 L7,34 L-7,34 Z" fill="#c07a50"/>
+  </g>
+
+  <!-- whiteboard -->
+  <g transform="translate(110,90)">
+    <rect x="0" y="0" width="340" height="210" rx="14" fill="#ffffff" stroke="#c9bda6" stroke-width="4"/>
+    <text x="170" y="70" text-anchor="middle" font-family="Shippori Mincho, serif" font-size="30" font-weight="700" fill="#5c4a3a">ケアステーションゆう</text>
+    <rect x="34" y="98" width="272" height="9" rx="4" fill="#e0a83c"/>
+    <rect x="34" y="124" width="196" height="9" rx="4" fill="#6a9e7e"/>
+    <rect x="34" y="150" width="228" height="9" rx="4" fill="#c07a50"/>
+    <rect x="34" y="176" width="148" height="9" rx="4" fill="#4a7c5e"/>
+  </g>
+
+  <!-- potted plant, bottom left -->
+  <g transform="translate(55,255)">
+    <path d="M20,80 Q-6,40 8,0 Q22,34 20,80 Z" fill="#6a9e7e"/>
+    <path d="M20,80 Q46,44 34,4 Q20,38 20,80 Z" fill="#7cae8c"/>
+    <path d="M20,80 Q4,50 20,20 Q34,52 20,80 Z" fill="#4a7c5e"/>
+    <path d="M-4,80 L44,80 L38,130 L2,130 Z" fill="#c07a50"/>
+  </g>
+
+  <!-- ===== people, drawn before the table so it overlaps their lower torsos ===== -->
+
+  <!-- person 1 -->
+  <g transform="translate(150,190)">
+    <path d="M-38,150 Q-42,80 0,72 Q42,80 38,150 Z" fill="#6a9e7e"/>
+    <path d="M-38,120 Q-58,105 -54,75" fill="none" stroke="#6a9e7e" stroke-width="16" stroke-linecap="round"/>
+    <circle cx="-54" cy="70" r="9" fill="#f0ddc4"/>
+    <circle cx="0" cy="34" r="32" fill="#f0ddc4"/>
+    <path d="M-32,30 Q-34,-2 0,-4 Q34,-2 32,30 Q22,10 0,10 Q-22,10 -32,30 Z" fill="#5c4a3a"/>
+    <circle cx="-11" cy="36" r="3" fill="#5c4a3a"/>
+    <circle cx="11" cy="36" r="3" fill="#5c4a3a"/>
+    <path d="M-10,46 Q0,54 10,46" fill="none" stroke="#5c4a3a" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- person 2 -->
+  <g transform="translate(322,196)">
+    <path d="M-36,144 Q-40,76 0,68 Q40,76 36,144 Z" fill="#d69268"/>
+    <circle cx="0" cy="32" r="30" fill="#f0ddc4"/>
+    <path d="M-30,28 Q-32,-2 0,-4 Q32,-2 30,28 Q21,9 0,9 Q-21,9 -30,28 Z" fill="#5c4a3a"/>
+    <circle cx="-10" cy="34" r="3" fill="#5c4a3a"/>
+    <circle cx="10" cy="34" r="3" fill="#5c4a3a"/>
+    <path d="M-9,44 Q0,51 9,44" fill="none" stroke="#5c4a3a" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- notepad held in front -->
+    <rect x="4" y="98" width="46" height="34" rx="4" fill="#fffaf3" stroke="#e6dccb" stroke-width="2"/>
+    <line x1="10" y1="108" x2="44" y2="108" stroke="#dccdb4" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="10" y1="117" x2="44" y2="117" stroke="#dccdb4" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="10" y1="126" x2="34" y2="126" stroke="#dccdb4" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- person 3 -->
+  <g transform="translate(478,200)">
+    <path d="M-36,140 Q-40,74 0,66 Q40,74 36,140 Z" fill="#7fa3c4"/>
+    <circle cx="0" cy="30" r="30" fill="#f0ddc4"/>
+    <path d="M-30,26 Q-32,-4 0,-6 Q32,-4 30,26 Q21,7 0,7 Q-21,7 -30,26 Z" fill="#5c4a3a"/>
+    <circle cx="-10" cy="32" r="3" fill="#5c4a3a"/>
+    <circle cx="10" cy="32" r="3" fill="#5c4a3a"/>
+    <path d="M-9,42 Q0,49 9,42" fill="none" stroke="#5c4a3a" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- pen held upright -->
+    <rect x="-6" y="80" width="10" height="46" rx="4" fill="#5c7fa3"/>
+    <rect x="-6" y="80" width="10" height="10" rx="4" fill="#f0ddc4"/>
+  </g>
+
+  <!-- person 4 -->
+  <g transform="translate(650,190)">
+    <path d="M-38,150 Q-42,80 0,72 Q42,80 38,150 Z" fill="#6a9e7e"/>
+    <path d="M38,120 Q58,105 54,75" fill="none" stroke="#6a9e7e" stroke-width="16" stroke-linecap="round"/>
+    <circle cx="54" cy="70" r="9" fill="#f0ddc4"/>
+    <circle cx="0" cy="34" r="32" fill="#f0ddc4"/>
+    <path d="M-32,30 Q-34,-2 0,-4 Q34,-2 32,30 Q22,10 0,10 Q-22,10 -32,30 Z" fill="#5c4a3a"/>
+    <circle cx="-11" cy="36" r="3" fill="#5c4a3a"/>
+    <circle cx="11" cy="36" r="3" fill="#5c4a3a"/>
+    <path d="M-10,46 Q0,54 10,46" fill="none" stroke="#5c4a3a" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- table, drawn last so it covers the lower torsos -->
+  <ellipse cx="400" cy="378" rx="372" ry="52" fill="url(#tableGrad)" stroke="#b8a074" stroke-width="2"/>
+
+  <!-- small items on the table -->
+  <circle cx="245" cy="368" r="15" fill="#ffffff" stroke="#e6dccb" stroke-width="2"/>
+  <circle cx="560" cy="370" r="15" fill="#ffffff" stroke="#e6dccb" stroke-width="2"/>
+</svg>
