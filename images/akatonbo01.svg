@@ -1,0 +1,101 @@
+<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="skyGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#bfe0ee"/>
+      <stop offset="55%" stop-color="#eaf1e0"/>
+      <stop offset="100%" stop-color="#f7ecd9"/>
+    </linearGradient>
+    <linearGradient id="hillGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#9bb98a"/>
+      <stop offset="100%" stop-color="#7fa270"/>
+    </linearGradient>
+    <linearGradient id="fieldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#dcbf6e"/>
+      <stop offset="100%" stop-color="#c9a750"/>
+    </linearGradient>
+  </defs>
+
+  <!-- sky -->
+  <rect width="800" height="450" fill="url(#skyGrad2)"/>
+
+  <!-- soft clouds -->
+  <g fill="#ffffff" opacity="0.75">
+    <ellipse cx="120" cy="70" rx="46" ry="16"/>
+    <ellipse cx="155" cy="62" rx="34" ry="14"/>
+    <ellipse cx="620" cy="55" rx="40" ry="14"/>
+    <ellipse cx="655" cy="48" rx="26" ry="11"/>
+  </g>
+
+  <!-- distant Aso ridge, simplified silhouette -->
+  <path d="M0,230 Q80,195 150,210 Q210,180 270,205 Q330,175 400,200
+           Q460,178 520,202 Q580,182 650,206 Q720,188 800,208 L800,260 L0,260 Z"
+        fill="#8c9f86" opacity="0.55"/>
+
+  <!-- rolling grassland hills -->
+  <path d="M0,260 Q140,225 280,250 Q420,220 560,248 Q680,224 800,244 L800,320 L0,320 Z"
+        fill="url(#hillGrad2)"/>
+
+  <!-- rice paddy, foreground -->
+  <rect x="0" y="300" width="800" height="150" fill="url(#fieldGrad)"/>
+  <g stroke="#a98a3c" stroke-width="2" opacity="0.5">
+    <path d="M0,340 Q400,332 800,340"/>
+    <path d="M0,380 Q400,372 800,380"/>
+    <path d="M0,420 Q400,412 800,420"/>
+  </g>
+
+  <!-- rows of rice ears (inaho), gently drooping -->
+  <g stroke="#8a6f2e" stroke-width="3" stroke-linecap="round" fill="none">
+    <path d="M40,450 L46,360 Q54,346 66,352"/>
+    <path d="M100,450 L104,352 Q112,338 124,344"/>
+    <path d="M160,450 L166,364 Q174,350 186,356"/>
+    <path d="M230,450 L234,356 Q242,342 254,348"/>
+    <path d="M300,450 L306,362 Q314,348 326,354"/>
+    <path d="M380,450 L384,354 Q392,340 404,346"/>
+    <path d="M460,450 L466,360 Q474,346 486,352"/>
+    <path d="M540,450 L544,352 Q552,338 564,344"/>
+    <path d="M620,450 L626,364 Q634,350 646,356"/>
+    <path d="M700,450 L704,356 Q712,342 724,348"/>
+    <path d="M760,450 L766,362 Q774,348 786,354"/>
+  </g>
+  <g fill="#e6c85a">
+    <ellipse cx="66" cy="352" rx="7" ry="4"/>
+    <ellipse cx="124" cy="344" rx="7" ry="4"/>
+    <ellipse cx="186" cy="356" rx="7" ry="4"/>
+    <ellipse cx="254" cy="348" rx="7" ry="4"/>
+    <ellipse cx="326" cy="354" rx="7" ry="4"/>
+    <ellipse cx="404" cy="346" rx="7" ry="4"/>
+    <ellipse cx="486" cy="352" rx="7" ry="4"/>
+    <ellipse cx="564" cy="344" rx="7" ry="4"/>
+    <ellipse cx="646" cy="356" rx="7" ry="4"/>
+    <ellipse cx="724" cy="348" rx="7" ry="4"/>
+    <ellipse cx="786" cy="354" rx="7" ry="4"/>
+  </g>
+
+  <!-- dragonflies: reusable group, defined off-canvas so it only appears via <use> -->
+  <defs>
+  <g id="tonbo">
+    <ellipse cx="0" cy="0" rx="3.5" ry="10" fill="#c96b4a" transform="rotate(20)"/>
+    <ellipse cx="0" cy="10" rx="2.6" ry="9" fill="#b95a3c" transform="rotate(20)"/>
+    <circle cx="-2" cy="-9" r="3.4" fill="#a8492e"/>
+    <path d="M0,-3 Q-22,-14 -34,-4 Q-20,-2 0,2 Z" fill="#e8b9a4" opacity="0.75"/>
+    <path d="M0,-3 Q22,-14 34,-4 Q20,-2 0,2 Z" fill="#e8b9a4" opacity="0.75"/>
+    <path d="M0,3 Q-20,10 -30,20 Q-16,12 0,7 Z" fill="#e8b9a4" opacity="0.65"/>
+    <path d="M0,3 Q20,10 30,20 Q16,12 0,7 Z" fill="#e8b9a4" opacity="0.65"/>
+  </g>
+  </defs>
+
+  <use href="#tonbo" transform="translate(180,150) rotate(-8) scale(1.15)"/>
+  <use href="#tonbo" transform="translate(330,105) rotate(10)"/>
+  <use href="#tonbo" transform="translate(470,165) rotate(-14) scale(1.05)"/>
+  <use href="#tonbo" transform="translate(590,120) rotate(6) scale(0.9)"/>
+  <use href="#tonbo" transform="translate(250,220) rotate(-20) scale(0.85)"/>
+
+  <!-- one dragonfly resting on a rice ear tip -->
+  <g transform="translate(404,346) rotate(35) scale(0.95)">
+    <ellipse cx="0" cy="0" rx="3.2" ry="9" fill="#c96b4a"/>
+    <ellipse cx="0" cy="9" rx="2.4" ry="8" fill="#b95a3c"/>
+    <circle cx="-1.5" cy="-8" r="3" fill="#a8492e"/>
+    <path d="M0,-2 Q-18,-11 -28,-3 Q-16,-1 0,2 Z" fill="#e8b9a4" opacity="0.8"/>
+    <path d="M0,-2 Q18,-11 28,-3 Q16,-1 0,2 Z" fill="#e8b9a4" opacity="0.8"/>
+  </g>
+</svg>
