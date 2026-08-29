@@ -1,0 +1,116 @@
+<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="roomGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fdf9f4"/>
+      <stop offset="100%" stop-color="#f5ece4"/>
+    </linearGradient>
+    <linearGradient id="floorGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ecddc2"/>
+      <stop offset="100%" stop-color="#e6d3b3"/>
+    </linearGradient>
+    <linearGradient id="skyDay" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#bfe0ee"/>
+      <stop offset="100%" stop-color="#eaf1e0"/>
+    </linearGradient>
+    <linearGradient id="chairGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e8c39f"/>
+      <stop offset="100%" stop-color="#d9a877"/>
+    </linearGradient>
+    <linearGradient id="tableGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#dcc7a3"/>
+      <stop offset="100%" stop-color="#c7a97e"/>
+    </linearGradient>
+    <clipPath id="windowClip"><rect x="0" y="0" width="230" height="240" rx="8"/></clipPath>
+  </defs>
+
+  <!-- room -->
+  <rect width="800" height="450" fill="url(#roomGrad)"/>
+  <rect x="0" y="360" width="800" height="90" fill="url(#floorGrad2)"/>
+
+  <!-- window with hot summer sky outside -->
+  <g transform="translate(510,36)">
+    <g clip-path="url(#windowClip)">
+      <rect x="0" y="0" width="230" height="240" fill="url(#skyDay)"/>
+      <!-- sun -->
+      <circle cx="168" cy="58" r="34" fill="#f6c94a"/>
+      <g stroke="#f6c94a" stroke-width="5" stroke-linecap="round" opacity="0.85">
+        <line x1="168" y1="14" x2="168" y2="0"/>
+        <line x1="168" y1="102" x2="168" y2="116"/>
+        <line x1="130" y1="58" x2="115" y2="58"/>
+        <line x1="206" y1="58" x2="221" y2="58"/>
+        <line x1="141" y1="31" x2="130" y2="20"/>
+        <line x1="195" y1="31" x2="206" y2="20"/>
+        <line x1="141" y1="85" x2="130" y2="96"/>
+        <line x1="195" y1="85" x2="206" y2="96"/>
+      </g>
+      <!-- distant Aso hills -->
+      <path d="M0,196 C42,176 84,192 126,174 C168,156 198,182 230,166 L230,240 L0,240 Z" fill="#8fb99e"/>
+      <path d="M0,214 C50,202 104,218 156,204 C186,196 208,210 230,202 L230,240 L0,240 Z" fill="#6a9e7e"/>
+    </g>
+    <rect x="0" y="0" width="230" height="240" rx="8" fill="none" stroke="#c9bda6" stroke-width="6"/>
+    <line x1="115" y1="0" x2="115" y2="240" stroke="#c9bda6" stroke-width="5"/>
+    <line x1="0" y1="120" x2="230" y2="120" stroke="#c9bda6" stroke-width="5"/>
+  </g>
+
+  <!-- curtains -->
+  <path d="M480,20 Q460,140 486,246 L510,246 Q492,140 508,20 Z" fill="#e8c39f" opacity="0.9"/>
+  <path d="M760,20 Q782,140 754,246 L730,246 Q750,140 732,20 Z" fill="#e8c39f" opacity="0.9"/>
+
+  <!-- potted plant, bottom left -->
+  <g transform="translate(48,300)">
+    <path d="M20,80 Q-6,40 8,0 Q22,34 20,80 Z" fill="#6a9e7e"/>
+    <path d="M20,80 Q46,44 34,4 Q20,38 20,80 Z" fill="#7cae8c"/>
+    <path d="M20,80 Q4,50 20,20 Q34,52 20,80 Z" fill="#4a7c5e"/>
+    <path d="M-4,80 L44,80 L38,130 L2,130 Z" fill="#c07a50"/>
+  </g>
+
+  <!-- electric fan, gently blowing toward the chair -->
+  <g transform="translate(112,258)">
+    <rect x="-4" y="30" width="8" height="88" rx="4" fill="#9fb3bd"/>
+    <ellipse cx="0" cy="120" rx="30" ry="8" fill="#8aa0ab"/>
+    <circle cx="0" cy="8" r="34" fill="#eef3f5" stroke="#b9c9d0" stroke-width="4"/>
+    <circle cx="0" cy="8" r="23" fill="none" stroke="#c7d6dc" stroke-width="2"/>
+    <circle cx="0" cy="8" r="6" fill="#b9c9d0"/>
+    <g stroke="#c7d6dc" stroke-width="3" stroke-linecap="round">
+      <line x1="0" y1="8" x2="0" y2="-18"/>
+      <line x1="0" y1="8" x2="22" y2="22"/>
+      <line x1="0" y1="8" x2="-22" y2="22"/>
+    </g>
+    <g stroke="#9ecbdb" stroke-width="3.5" fill="none" stroke-linecap="round" opacity="0.85">
+      <path d="M36,-6 Q58,-12 74,-4"/>
+      <path d="M36,10 Q62,6 80,14"/>
+      <path d="M36,26 Q58,24 74,32"/>
+    </g>
+  </g>
+
+  <!-- armchair -->
+  <g transform="translate(300,236)">
+    <rect x="-95" y="-40" width="190" height="170" rx="30" fill="url(#chairGrad)"/>
+    <rect x="-118" y="20" width="32" height="92" rx="14" fill="#d9a877"/>
+    <rect x="86" y="20" width="32" height="92" rx="14" fill="#d9a877"/>
+    <rect x="-90" y="92" width="180" height="40" rx="16" fill="#e8c39f"/>
+
+    <!-- seated person -->
+    <g transform="translate(0,-6)">
+      <path d="M-34,116 Q-38,52 0,45 Q38,52 34,116 Z" fill="#6a9e7e"/>
+      <circle cx="0" cy="12" r="30" fill="#f0ddc4"/>
+      <path d="M-30,8 Q-32,-22 0,-24 Q32,-22 30,8 Q21,-11 0,-11 Q-21,-11 -30,8 Z" fill="#8a8a8a"/>
+      <circle cx="-10" cy="14" r="3" fill="#5c4a3a"/>
+      <circle cx="10" cy="14" r="3" fill="#5c4a3a"/>
+      <path d="M-9,24 Q0,31 9,24" fill="none" stroke="#5c4a3a" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- side table with a cold glass of water -->
+  <g transform="translate(452,330)">
+    <ellipse cx="0" cy="46" rx="58" ry="16" fill="url(#tableGrad2)" stroke="#b8a074" stroke-width="2"/>
+    <rect x="-6" y="-18" width="30" height="46" rx="5" fill="#cfeaf3" opacity="0.85" stroke="#8fbcd1" stroke-width="2"/>
+    <g fill="#ffffff" opacity="0.7">
+      <circle cx="2" cy="-2" r="2.4"/>
+      <circle cx="14" cy="8" r="2"/>
+      <circle cx="4" cy="16" r="2.2"/>
+    </g>
+    <path d="M-6,-18 Q9,-24 24,-18" fill="none" stroke="#8fbcd1" stroke-width="2"/>
+  </g>
+
+</svg>
