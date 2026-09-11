@@ -1,0 +1,113 @@
+<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="skyNight2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#1c2947"/>
+      <stop offset="45%"  stop-color="#2e3d63"/>
+      <stop offset="78%"  stop-color="#4c4d72"/>
+      <stop offset="100%" stop-color="#6a5a72"/>
+    </linearGradient>
+    <radialGradient id="moonGrad2" cx="42%" cy="38%" r="65%">
+      <stop offset="0%"   stop-color="#fffaf0"/>
+      <stop offset="60%"  stop-color="#fdf0c8"/>
+      <stop offset="100%" stop-color="#f0d79a"/>
+    </radialGradient>
+    <linearGradient id="hillBack2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"  stop-color="#33475a"/>
+      <stop offset="100%" stop-color="#293c4d"/>
+    </linearGradient>
+    <linearGradient id="hillFront2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"  stop-color="#213145"/>
+      <stop offset="100%" stop-color="#182535"/>
+    </linearGradient>
+    <linearGradient id="trayGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"  stop-color="#c07a50"/>
+      <stop offset="100%" stop-color="#a66038"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#skyNight2)"/>
+
+  <!-- stars -->
+  <g fill="#fdf9f4">
+    <circle cx="70" cy="60" r="1.6" opacity="0.75"/>
+    <circle cx="140" cy="110" r="1.2" opacity="0.55"/>
+    <circle cx="230" cy="55" r="1.8" opacity="0.7"/>
+    <circle cx="120" cy="180" r="1.4" opacity="0.6"/>
+    <circle cx="40" cy="150" r="1.1" opacity="0.5"/>
+    <circle cx="330" cy="90" r="1.3" opacity="0.55"/>
+    <circle cx="620" cy="60" r="1.4" opacity="0.6"/>
+    <circle cx="700" cy="130" r="1.2" opacity="0.5"/>
+    <circle cx="480" cy="50" r="1.3" opacity="0.55"/>
+    <circle cx="190" cy="230" r="1.1" opacity="0.4"/>
+  </g>
+
+  <!-- moon glow -->
+  <circle cx="560" cy="110" r="108" fill="#fdf0c8" opacity="0.08"/>
+  <circle cx="560" cy="110" r="88"  fill="#fdf0c8" opacity="0.12"/>
+  <circle cx="560" cy="110" r="70"  fill="#fdf0c8" opacity="0.16"/>
+
+  <!-- moon -->
+  <circle cx="560" cy="110" r="56" fill="url(#moonGrad2)"/>
+
+  <!-- rabbit silhouette on the moon, pounding mochi -->
+  <g transform="translate(552,116) scale(0.72)" fill="#e3c98f" opacity="0.55">
+    <ellipse cx="-6" cy="10" rx="16" ry="11"/>
+    <ellipse cx="-24" cy="4" rx="7" ry="5"/>
+    <path d="M-28,-6 Q-33,-20 -25,-22 Q-22,-10 -20,-2 Z"/>
+    <path d="M-19,-8 Q-21,-22 -13,-24 Q-13,-11 -12,-3 Z"/>
+    <rect x="10" y="-10" width="4" height="30" rx="2" transform="rotate(18 12 5)"/>
+    <ellipse cx="18" cy="16" rx="9" ry="6"/>
+  </g>
+
+  <!-- back hills (Aso silhouette) -->
+  <path d="M0,300 C90,260 160,290 240,265 C320,240 380,275 470,255 C560,235 620,270 700,250 C750,238 780,255 800,248 L800,450 L0,450 Z" fill="url(#hillBack2)"/>
+
+  <!-- front hills -->
+  <path d="M0,340 C100,310 190,345 280,320 C370,295 440,335 540,318 C630,302 690,330 800,312 L800,450 L0,450 Z" fill="url(#hillFront2)"/>
+
+  <!-- low tray in the foreground, with dango and susuki -->
+  <g transform="translate(280,352)">
+    <ellipse cx="0" cy="34" rx="150" ry="28" fill="url(#trayGrad)" stroke="#8a4a28" stroke-width="2"/>
+
+    <!-- plate with tsukimi dango, stacked in a pyramid -->
+    <g transform="translate(-40,-6)">
+      <ellipse cx="0" cy="22" rx="46" ry="12" fill="#fffaf3" stroke="#e6dccb" stroke-width="2"/>
+      <g fill="#fffaf3" stroke="#e9ddc9" stroke-width="1.5">
+        <circle cx="-18" cy="10" r="12"/>
+        <circle cx="0" cy="10" r="12"/>
+        <circle cx="18" cy="10" r="12"/>
+        <circle cx="-9" cy="-2" r="12"/>
+        <circle cx="9" cy="-2" r="12"/>
+        <circle cx="0" cy="-14" r="12"/>
+      </g>
+    </g>
+
+    <!-- vase with susuki -->
+    <g transform="translate(78,4)">
+      <path d="M-12,20 L12,20 L9,42 L-9,42 Z" fill="#e8c39f" stroke="#c9a06e" stroke-width="1.5"/>
+      <g stroke="#d8c79a" stroke-width="3" fill="none" stroke-linecap="round">
+        <path d="M-4,20 Q-10,-30 -18,-64"/>
+        <path d="M2,20 Q4,-34 2,-72"/>
+        <path d="M7,20 Q16,-26 24,-58"/>
+      </g>
+      <g stroke="#eee3c2" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.95">
+        <path d="M-18,-64 Q-30,-72 -38,-70"/>
+        <path d="M-18,-64 Q-28,-78 -32,-86"/>
+        <path d="M-18,-64 Q-22,-80 -18,-90"/>
+        <path d="M-18,-64 Q-10,-78 -6,-84"/>
+        <path d="M-18,-64 Q-4,-68 4,-64"/>
+        <path d="M2,-72 Q-10,-80 -16,-78"/>
+        <path d="M2,-72 Q-4,-88 -6,-96"/>
+        <path d="M2,-72 Q2,-90 4,-98"/>
+        <path d="M2,-72 Q10,-88 14,-94"/>
+        <path d="M2,-72 Q14,-78 20,-74"/>
+        <path d="M24,-58 Q12,-66 6,-64"/>
+        <path d="M24,-58 Q16,-74 14,-82"/>
+        <path d="M24,-58 Q24,-76 26,-84"/>
+        <path d="M24,-58 Q34,-72 38,-78"/>
+        <path d="M24,-58 Q38,-62 44,-58"/>
+      </g>
+    </g>
+  </g>
+
+</svg>
