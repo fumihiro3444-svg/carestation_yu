@@ -24,6 +24,7 @@ img { max-width: 100%; display: block; object-fit: cover; }
   --green-pale: #e6f0ea;
   --terra:      #c07a50;
   --terra-pale: #f5ece4;
+  --terra-dark: #985630;
   --cream:      #fdf9f4;
   --cream2:     #f7f0e6;
   --warm-white: #fffdf9;
