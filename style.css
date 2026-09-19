@@ -1,7 +1,7 @@
 /* ===== RESET & BASE ===== */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
-body { font-family: 'Zen Kaku Gothic New', sans-serif; color: #2e2820; background: #fff; overflow-x: hidden; line-height: 1.8; }
+body { font-family: 'Zen Kaku Gothic New', sans-serif; color: var(--text); background: #fff; overflow-x: hidden; line-height: 1.8; }
 a { color: inherit; text-decoration: none; }
 img { max-width: 100%; display: block; object-fit: cover; }
 
@@ -124,17 +124,17 @@ img { max-width: 100%; display: block; object-fit: cover; }
 .greeting { background: var(--warm-white); padding: 5rem 1.5rem 4rem; position: relative; overflow: hidden; }
 .greeting::before { content: ''; position: absolute; top: -60px; right: -60px; width: 240px; height: 240px; border-radius: 50%; background: radial-gradient(circle, rgba(106,158,126,0.10) 0%, transparent 70%); pointer-events: none; }
 .greeting-inner { max-width: 760px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 3.5rem; align-items: center; }
-.greeting-quote { background: var(--green-pale); border-left: 4px solid var(--green); border-radius: 0 12px 12px 0; padding: 1.2rem 1.4rem; font-size: 14.5px; color: #3a5a46; line-height: 1.9; margin-bottom: 1.4rem; font-style: italic; }
+.greeting-quote { background: var(--green-pale); border-left: 4px solid var(--green); border-radius: 0 12px 12px 0; padding: 1.2rem 1.4rem; font-size: 14.5px; color: var(--green-dark); line-height: 1.9; margin-bottom: 1.4rem; font-style: italic; }
 .greeting-visual { display: flex; align-items: center; justify-content: center; }
 
 /* ===== FLORAL SEPARATORS ===== */
 .floral-sep {
-  background: linear-gradient(to right, #e8f2ec, #f5ece4, #e8f2ec);
+  background: linear-gradient(to right, var(--green-pale), var(--terra-pale), var(--green-pale));
   padding: 1.2rem 2rem;
   display: flex; align-items: center; justify-content: center; gap: 14px;
 }
 .floral-sep2 {
-  background: linear-gradient(to right, #f0f4ee, #f5ece4, #f0f4ee);
+  background: linear-gradient(to right, var(--green-pale), var(--terra-pale), var(--green-pale));
   padding: 1rem 2rem;
   display: flex; align-items: center; justify-content: center; gap: 10px;
 }
@@ -193,7 +193,7 @@ img { max-width: 100%; display: block; object-fit: cover; }
 }
 
 /* ===== STRIPE ===== */
-.stripe { background: linear-gradient(135deg, #e8f2ec 0%, #f0ece2 100%); padding: 4rem 1.5rem; position: relative; overflow: hidden; }
+.stripe { background: linear-gradient(135deg, var(--green-pale) 0%, #f0ece2 100%); padding: 4rem 1.5rem; position: relative; overflow: hidden; }
 .stripe::before { content: ''; position: absolute; inset: 0; background-image: radial-gradient(circle at 20% 50%, rgba(106,158,126,0.12) 0%, transparent 50%), radial-gradient(circle at 80% 50%, rgba(192,122,80,0.08) 0%, transparent 50%); }
 .stripe-inner { max-width: 860px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; position: relative; }
 .stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
