@@ -203,7 +203,7 @@ img { max-width: 100%; display: block; object-fit: cover; }
 .stat-label { font-size: 12px; color: var(--text-mute); margin-top: 5px; letter-spacing: 0.06em; }
 
 /* ===== SERVICES ===== */
-.services-section { background: var(--cream); padding: 4.5rem 1.5rem; }
+.services-section { background: #f3e9db; padding: 4.5rem 1.5rem; }
 .services-inner { max-width: 860px; margin: 0 auto; }
 .tab-nav { display: flex; border-bottom: none; margin-bottom: 2rem; gap: 10px; overflow-x: auto; scrollbar-width: none; }
 .tab-nav::-webkit-scrollbar { display: none; }
