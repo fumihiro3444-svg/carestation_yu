@@ -544,15 +544,44 @@ footer strong { color: rgba(255,255,255,0.88); font-weight: 500; font-size: 15px
 }
 
 /* ===== セクション境目の波型（2026-10-09追加） ===== */
-.services-section, .access-section { position: relative; }
-.services-section::before, .services-section::after, .access-section::before {
+.services-section, .access-section, .pro-notice { position: relative; }
+.services-section::before, .services-section::after, .pro-notice::before {
   content: ''; position: absolute; left: 0; right: 0; height: 60px; pointer-events: none;
   background-repeat: no-repeat; background-size: 100% 100%;
 }
 .services-section::before { top: -59px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 60' preserveAspectRatio='none'%3E%3Cpath fill='%23f3e9db' d='M0,32 C180,8 360,8 540,28 C720,48 900,56 1080,36 C1260,16 1380,18 1440,26 L1440,60 L0,60 Z'/%3E%3C/svg%3E"); }
 .services-section::after { bottom: -59px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 60' preserveAspectRatio='none'%3E%3Cpath fill='%23f3e9db' d='M0,0 L1440,0 L1440,30 C1260,52 1080,54 900,34 C720,14 540,6 360,24 C180,42 80,44 0,34 Z'/%3E%3C/svg%3E"); z-index: 1; }
-.access-section::before { top: -59px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 60' preserveAspectRatio='none'%3E%3Cpath fill='%23fffdf9' d='M0,32 C180,8 360,8 540,28 C720,48 900,56 1080,36 C1260,16 1380,18 1440,26 L1440,60 L0,60 Z'/%3E%3C/svg%3E"); }
+.pro-notice::before { top: -59px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 60' preserveAspectRatio='none'%3E%3Cpath fill='%23fffdf9' d='M0,32 C180,8 360,8 540,28 C720,48 900,56 1080,36 C1260,16 1380,18 1440,26 L1440,60 L0,60 Z'/%3E%3C/svg%3E"); }
 @media (max-width: 600px) {
-  .services-section::before, .access-section::before { height: 30px; top: -29px; }
+  .services-section::before, .pro-notice::before { height: 30px; top: -29px; }
   .services-section::after { height: 30px; bottom: -29px; }
 }
+
+/* ===== PC版ヘッダーの強調（2026-10-11追加） ===== */
+@media (min-width: 901px) {
+  .nav-inner { height: 74px; }
+  .nav-links { gap: 0.9rem; align-items: center; }
+  .nav-links a { font-size: 13.5px; position: relative; padding: 6px 0; }
+  .nav-links a::after { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 2px; background: var(--green); border-radius: 2px; transform: scaleX(0); transition: transform 0.2s; }
+  .nav-links a:hover::after { transform: scaleX(1); }
+  .nav-links a[href$="#contact"] { padding: 6px 12px; border: 1.5px solid var(--terra); border-radius: 999px; color: var(--terra-dark); }
+  .nav-links a[href$="#contact"]::after { display: none; }
+  .nav-links a[href$="#contact"]:hover { background: var(--terra); color: #fff; }
+}
+@media (min-width: 1200px) {
+  .nav-logo { font-size: 20px; }
+  .nav-links { gap: 1.5rem; }
+  .nav-links a { font-size: 14.5px; }
+  .nav-links a[href$="#contact"] { padding: 7px 16px; }
+  .nav-tel-btn { width: auto; height: 44px; padding: 0 20px 0 16px; gap: 8px; border-radius: 999px; box-shadow: 0 3px 10px rgba(74,124,94,0.25); }
+  .nav-tel-btn .tel-text { display: inline; font-size: 16px; font-weight: 700; letter-spacing: 0.05em; }
+  .nav-tel-btn svg { width: 18px; height: 18px; }
+}
+
+/* ===== 専門職の方へ：カード型に変更（2026-10-11追加） ===== */
+.pro-notice { background: var(--warm-white); border: none; padding: 3rem 1.5rem 0.5rem; }
+.pro-notice-inner { background: #fff; border: 1.5px solid var(--border); border-left: 5px solid var(--green); border-radius: 16px; padding: 1.8rem 1.6rem; box-shadow: var(--shadow-sm); }
+.pro-notice-eyebrow { font-size: 12px; letter-spacing: 0.22em; color: var(--green); font-weight: 500; margin-bottom: 6px; }
+.pro-notice-label { font-size: 1.25rem; }
+.pro-notice-link { display: inline-block; background: var(--green); color: #fff; padding: 8px 20px; border-radius: 999px; }
+.pro-notice-link:hover { background: var(--green-dark); text-decoration: none; }
