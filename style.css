@@ -585,3 +585,30 @@ footer strong { color: rgba(255,255,255,0.88); font-weight: 500; font-size: 15px
 .pro-notice-label { font-size: 1.25rem; }
 .pro-notice-link { display: inline-block; background: var(--green); color: #fff; padding: 8px 20px; border-radius: 999px; }
 .pro-notice-link:hover { background: var(--green-dark); text-decoration: none; }
+
+/* ===== ヘッダーのロゴマーク（2026-10-12追加） ===== */
+.nav-logo--mark { display: flex; align-items: center; gap: 10px; }
+.nav-logo-mark { width: 40px; height: 40px; flex-shrink: 0; display: block; }
+@media (min-width: 1200px) {
+  .nav-logo-mark { width: 44px; height: 44px; }
+}
+@media (max-width: 600px) {
+  .nav-logo--mark { gap: 7px; }
+  .nav-logo-mark { width: 30px; height: 30px; }
+}
+@media (max-width: 400px) {
+  .nav-logo--mark { font-size: 16px; gap: 6px; }
+  .nav-logo-mark { width: 28px; height: 28px; }
+}
+/* マーク追加分の横幅を、PC中間幅で吸収する */
+@media (min-width: 901px) and (max-width: 1099px) {
+  .nav-logo--mark { font-size: 17px; gap: 8px; }
+  .nav-logo-mark { width: 34px; height: 34px; }
+  .nav-inner:has(.nav-logo--mark) .nav-links { gap: 0.6rem; }
+}
+@media (min-width: 1200px) and (max-width: 1299px) {
+  .nav-inner:has(.nav-logo--mark) .nav-links { gap: 1.3rem; }
+}
+@media (max-width: 340px) {
+  .nav-logo-mark { display: none; }
+}
