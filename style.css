@@ -656,3 +656,7 @@ footer strong { color: rgba(255,255,255,0.88); font-weight: 500; font-size: 15px
   .greeting-cta a { justify-content: center; }
   .greeting-cta-note { text-align: center; }
 }
+/* スマホ（600px以下）は画面下の固定バーに電話・メールがあるので、挨拶下の相談ボタンは隠す（2026-10-19追加） */
+@media (max-width: 600px) {
+  .greeting-cta, .greeting-cta-note { display: none; }
+}
