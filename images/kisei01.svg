@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="お正月、窓の外に雪の阿蘇の山が見える居間で、帰省した息子さんとお母さんがこたつに入り、みかんとお茶を前に笑顔で話しているイラスト。床には帰省のかばん、棚には鏡もち">
+  <!-- 壁と床 -->
+  <rect width="800" height="450" rx="24" fill="#fbf4e8"/>
+  <rect y="300" width="800" height="150" fill="#ecdcc0"/>
+  <path d="M0 300 H800" stroke="#dcc8a6" stroke-width="3"/>
+  <path d="M0 360 H800 M0 410 H800" stroke="#e2d0b0" stroke-width="2"/>
+
+  <!-- 窓：雪の阿蘇 -->
+  <rect x="550" y="40" width="200" height="160" rx="10" fill="#e4edf3" stroke="#c9a77a" stroke-width="6"/>
+  <path d="M553 165 L562 134 L568 142 L575 120 L582 130 L588 112 L596 126 L603 118 L612 136 Q630 126 650 122 Q668 118 682 110 Q692 106 700 112 Q718 124 732 138 Q742 146 747 148 V197 H553Z" fill="#a9bfc4"/>
+  <path d="M562 134 L568 142 L575 120 L582 130 L588 112 L596 126 L603 118 L612 136 Q600 132 592 136 Q584 130 576 136 Q568 134 562 140Z" fill="#ffffff"/>
+  <path d="M650 122 Q668 118 682 110 Q692 106 700 112 Q718 124 732 138 Q712 134 700 128 Q688 132 676 126 Q662 130 650 128Z" fill="#ffffff"/>
+  <path d="M553 168 Q640 156 747 166 V197 H553Z" fill="#ffffff"/>
+  <path d="M688 106 q-6 -10 0 -18 q5 -8 -1 -16 M697 107 q5 -9 0 -16 q-4 -7 2 -14" fill="none" stroke="#c9bba8" stroke-width="3.5" stroke-linecap="round" opacity=".8"/>
+  <g fill="#ffffff">
+    <circle cx="572" cy="62" r="3.5"/><circle cx="604" cy="84" r="3"/><circle cx="628" cy="58" r="3.5"/>
+    <circle cx="676" cy="70" r="3"/><circle cx="718" cy="56" r="3.5"/><circle cx="734" cy="90" r="3"/>
+    <circle cx="590" cy="104" r="2.5"/><circle cx="660" cy="96" r="2.5"/><circle cx="706" cy="88" r="2.5"/>
+  </g>
+  <path d="M650 40 V200 M550 120 H750" stroke="#c9a77a" stroke-width="5"/>
+
+  <!-- 棚と鏡もち -->
+  <rect x="70" y="196" width="130" height="14" rx="4" fill="#c9a77a"/>
+  <rect x="98" y="176" width="74" height="20" rx="3" fill="#ffffff" stroke="#e2c9a0" stroke-width="3"/>
+  <ellipse cx="135" cy="166" rx="34" ry="14" fill="#ffffff" stroke="#e8dcc8" stroke-width="3"/>
+  <ellipse cx="135" cy="148" rx="25" ry="11" fill="#ffffff" stroke="#e8dcc8" stroke-width="3"/>
+  <circle cx="135" cy="132" r="9" fill="#f2a64a"/>
+  <path d="M135 123 q4 -7 10 -6" fill="none" stroke="#6aa57a" stroke-width="3" stroke-linecap="round"/>
+  <path d="M104 178 L166 178" stroke="#d98a6a" stroke-width="4"/>
+
+  <!-- 床の影 -->
+  <ellipse cx="400" cy="398" rx="290" ry="16" fill="#2f6f5e" opacity=".08"/>
+
+  <!-- お母さん（左） -->
+  <path d="M282 300 L278 222 Q320 202 362 222 L358 300Z" fill="#c7b0d6"/>
+  <path d="M320 214 L320 300" stroke="#b39bc4" stroke-width="3"/>
+  <circle cx="320" cy="250" r="3" fill="#fff"/><circle cx="320" cy="270" r="3" fill="#fff"/>
+  <circle cx="320" cy="150" r="13" fill="#d9d3cd"/>
+  <path d="M290 178 Q288 150 320 150 Q352 150 350 178 L348 192 L292 192Z" fill="#d9d3cd"/>
+  <circle cx="320" cy="180" r="29" fill="#ffe3cc"/>
+  <path d="M291 176 Q294 150 320 152 Q346 150 349 176 Q334 162 318 163 Q302 164 291 176Z" fill="#d9d3cd"/>
+  <path d="M305 183 q6 -7 12 0 M323 183 q6 -7 12 0" fill="none" stroke="#5a3a2a" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="301" cy="192" r="5.5" fill="#f4a6a0" opacity=".6"/>
+  <circle cx="339" cy="192" r="5.5" fill="#f4a6a0" opacity=".6"/>
+  <path d="M312 196 q8 7 16 0" fill="none" stroke="#c0705a" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- 息子さん（右） -->
+  <path d="M440 300 L436 220 Q480 200 524 220 L520 300Z" fill="#8fbf9f"/>
+  <path d="M458 214 Q480 228 502 214" fill="none" stroke="#6f9f80" stroke-width="5" stroke-linecap="round"/>
+  <path d="M452 172 Q450 140 480 142 Q510 140 508 172 L506 178 L454 178Z" fill="#3a2a20"/>
+  <circle cx="480" cy="176" r="29" fill="#ffe3cc"/>
+  <path d="M451 170 Q454 142 480 144 Q506 142 509 170 Q496 154 476 156 Q460 158 451 170Z" fill="#3a2a20"/>
+  <path d="M465 179 q6 -7 12 0 M483 179 q6 -7 12 0" fill="none" stroke="#5a3a2a" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="461" cy="188" r="5.5" fill="#f4a6a0" opacity=".6"/>
+  <circle cx="499" cy="188" r="5.5" fill="#f4a6a0" opacity=".6"/>
+  <path d="M472 192 q8 7 16 0" fill="none" stroke="#c0705a" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- 会話のハート -->
+  <path transform="translate(400 150) scale(0.8)" d="M0 6 C-10 -4 -20 6 -10 16 L0 26 L10 16 C20 6 10 -4 0 6Z" fill="#f4a6a0"/>
+  <path transform="translate(384 122) scale(0.45)" d="M0 6 C-10 -4 -20 6 -10 16 L0 26 L10 16 C20 6 10 -4 0 6Z" fill="#f4c2bd"/>
+
+  <!-- こたつ -->
+  <path d="M236 304 Q232 384 262 390 L538 390 Q568 384 564 304Z" fill="#d98a6a"/>
+  <path d="M236 304 Q232 384 262 390 L538 390 Q568 384 564 304Z" fill="none" stroke="#c4745a" stroke-width="3"/>
+  <g fill="#e9a98c" opacity=".9">
+    <circle cx="290" cy="336" r="7"/><circle cx="340" cy="360" r="7"/><circle cx="400" cy="334" r="7"/>
+    <circle cx="460" cy="362" r="7"/><circle cx="512" cy="338" r="7"/><circle cx="270" cy="372" r="6"/><circle cx="532" cy="374" r="6"/>
+  </g>
+  <rect x="222" y="290" width="356" height="16" rx="6" fill="#c9a77a"/>
+  <rect x="222" y="290" width="356" height="5" rx="3" fill="#d8bb92"/>
+
+  <!-- みかんとお茶 -->
+  <ellipse cx="400" cy="289" rx="44" ry="6" fill="#f4ead8"/>
+  <circle cx="386" cy="276" r="13" fill="#f2a64a"/>
+  <circle cx="412" cy="276" r="13" fill="#f2a64a"/>
+  <circle cx="399" cy="262" r="12" fill="#f5b25c"/>
+  <path d="M399 250 q3 -5 8 -4" fill="none" stroke="#6aa57a" stroke-width="3" stroke-linecap="round"/>
+  <path d="M332 268 L336 290 L354 290 L358 268Z" fill="#ffffff" stroke="#e2c9a0" stroke-width="2.5"/>
+  <path d="M340 260 q-4 -6 0 -12 M350 260 q4 -6 0 -12" fill="none" stroke="#d6cbbd" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M442 268 L446 290 L464 290 L468 268Z" fill="#ffffff" stroke="#e2c9a0" stroke-width="2.5"/>
+  <path d="M450 260 q-4 -6 0 -12 M460 260 q4 -6 0 -12" fill="none" stroke="#d6cbbd" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- 帰省のかばん -->
+  <rect x="616" y="318" width="96" height="68" rx="12" fill="#6f9fb0"/>
+  <rect x="616" y="318" width="96" height="68" rx="12" fill="none" stroke="#5c8a9a" stroke-width="3"/>
+  <path d="M646 318 V306 Q646 298 654 298 H674 Q682 298 682 306 V318" fill="none" stroke="#5c8a9a" stroke-width="6" stroke-linecap="round"/>
+  <path d="M616 346 H712" stroke="#5c8a9a" stroke-width="3"/>
+  <rect x="656" y="340" width="16" height="12" rx="3" fill="#f2d98a"/>
+  <rect x="690" y="328" width="14" height="20" rx="3" fill="#ffffff" opacity=".85"/>
+</svg>
